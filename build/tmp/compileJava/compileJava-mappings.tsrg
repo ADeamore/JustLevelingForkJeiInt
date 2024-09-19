@@ -1,0 +1,6 @@
+com/seniors/justlevelingfork/mixin/MixLivingEntity activeEffects f_20945_
+com/seniors/justlevelingfork/mixin/MixInventoryScreen getRecipeBookComponent ()Lnet/minecraft/client/gui/screens/recipebook/RecipeBookComponent; m_5564_
+com/seniors/justlevelingfork/mixin/MixLivingEntity onEffectAdded (Lnet/minecraft/world/effect/MobEffectInstance;Lnet/minecraft/world/entity/Entity;)V m_142540_
+com/seniors/justlevelingfork/mixin/MixLivingEntity onEffectUpdated (Lnet/minecraft/world/effect/MobEffectInstance;ZLnet/minecraft/world/entity/Entity;)V m_141973_
+com/seniors/justlevelingfork/mixin/MixLivingEntity canBeAffected (Lnet/minecraft/world/effect/MobEffectInstance;)Z m_7301_
+com/seniors/justlevelingfork/mixin/MixLivingEntity canBreatheUnderwater ()Z m_6040_
