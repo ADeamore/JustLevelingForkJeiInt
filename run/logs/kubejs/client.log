@@ -1,9 +1,9 @@
-[16:17:05] [INIT] KubeJS 2001.6.5-build.14; MC 2001 forge
-[16:17:05] [INIT] Loaded plugins:
-[16:17:05] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
-[16:17:05] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
-[16:17:05] [INIT] - com.seniors.justlevelingfork.kubejs.Plugin
-[16:17:05] [INFO] example.js#5: Hello, World! (Loaded client scripts)
-[16:17:05] [INFO] Loaded script client_scripts:example.js in 0.001 s
-[16:17:05] [INFO] Loaded 1/1 KubeJS client scripts in 0.033 s with 0 errors and 0 warnings
-[16:17:07] [INFO] Client resource reload complete!
+[21:17:15] [INIT] KubeJS 2001.6.5-build.14; MC 2001 forge
+[21:17:15] [INIT] Loaded plugins:
+[21:17:15] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[21:17:15] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[21:17:15] [INIT] - com.seniors.justlevelingfork.kubejs.Plugin
+[21:17:15] [INFO] example.js#5: Hello, World! (Loaded client scripts)
+[21:17:15] [INFO] Loaded script client_scripts:example.js in 0.001 s
+[21:17:15] [INFO] Loaded 1/1 KubeJS client scripts in 0.033 s with 0 errors and 0 warnings
+[21:17:18] [INFO] Client resource reload complete!

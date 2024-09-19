@@ -1,8 +1,8 @@
-[16:17:04] [INIT] KubeJS 2001.6.5-build.14; MC 2001 forge
-[16:17:04] [INIT] Loaded plugins:
-[16:17:04] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
-[16:17:04] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
-[16:17:04] [INIT] - com.seniors.justlevelingfork.kubejs.Plugin
-[16:17:05] [INFO] example.js#5: Hello, World! (Loaded startup scripts)
-[16:17:05] [INFO] Loaded script startup_scripts:example.js in 0.073 s
-[16:17:05] [INFO] Loaded 1/1 KubeJS startup scripts in 0.847 s with 0 errors and 0 warnings
+[21:17:14] [INIT] KubeJS 2001.6.5-build.14; MC 2001 forge
+[21:17:14] [INIT] Loaded plugins:
+[21:17:14] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[21:17:14] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgeClientPlugin
+[21:17:14] [INIT] - com.seniors.justlevelingfork.kubejs.Plugin
+[21:17:15] [INFO] example.js#5: Hello, World! (Loaded startup scripts)
+[21:17:15] [INFO] Loaded script startup_scripts:example.js in 0.061 s
+[21:17:15] [INFO] Loaded 1/1 KubeJS startup scripts in 0.822 s with 0 errors and 0 warnings

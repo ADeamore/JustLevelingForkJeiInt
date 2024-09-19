@@ -179,6 +179,23 @@ repositories {
         name = 'Kotlin for Forge'
         url = 'https://thedarkcolour.github.io/KotlinForForge/'
     }
+
+    //jei implementation
+    maven {
+        // location of the maven that hosts JEI files before January 2023
+        name = "Progwml6's maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        // location of the maven that hosts JEI files since January 2023
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
+    maven {
+        // location of a maven mirror for JEI files, as a fallback
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
 }
 
 dependencies {
@@ -236,9 +253,6 @@ dependencies {
     // Scorched Guns 2 compatibility
     compileOnly fg.deobf("curse.maven:scorched-guns-802940:5630448")
 
-    // Jei Compat
-    compileOnly fg.deobf("curse.maven:JEI-238222:5626488")
-
     // Iron's Spells 'n Spellbooks compatibility
     compileOnly fg.deobf("curse.maven:irons-spells-n-spellbooks-855414:5539243")
     runtimeOnly fg.deobf("curse.maven:caelus-308989:5281700")
@@ -249,8 +263,12 @@ dependencies {
     // Adds KFF as dependency and Kotlin libs (use the variant matching your mod loader)
     // FORGE
     implementation 'thedarkcolour:kotlinforforge:4.10.0'
-    // NEOFORGE
-    implementation 'thedarkcolour:kotlinforforge-neoforge:4.10.0'
+
+    //jei
+    // get api
+    implementation(fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.12.2.51"))
+    // get runtime
+    implementation(fg.deobf("mezz.jei:jei-1.20.1-forge:15.12.2.51"))
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

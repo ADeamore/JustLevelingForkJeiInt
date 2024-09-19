@@ -1,6 +1,6 @@
 {
 	// DON'T CHANGE THIS, REQUIRED TO AUTOMATICALLY TRY TO PORT LOCK ITEMS FROM THE OLD CONFIG.
-	usingNewConfig: false,
+	usingNewConfig: true,
 	// Should the mod automatically check for updates on load?
 	checkForUpdates: true,
 	// Aptitudes Max Level
