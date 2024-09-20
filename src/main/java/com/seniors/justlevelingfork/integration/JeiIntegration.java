@@ -4,8 +4,10 @@ import com.seniors.justlevelingfork.JustLevelingFork;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.ingredients.IIngredientType;
-import mezz.jei.api.registration.IModIngredientRegistration;
-import mezz.jei.api.runtime.IRecipesGui;
+import mezz.jei.api.ingredients.ITypedIngredient;
+import mezz.jei.api.runtime.IIngredientManager;
+import mezz.jei.api.runtime.IJeiRuntime;
+import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
@@ -15,12 +17,16 @@ import mezz.jei.api.runtime.IJeiRuntime;
 import org.jetbrains.annotations.Unmodifiable;
 
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.Optional;
 
 @JeiPlugin
 public class JeiIntegration implements IModPlugin {
 
-    IJeiRuntime runtime;
     public static final ResourceLocation ID = new ResourceLocation(JustLevelingFork.MOD_ID, "jei");
+    Collection<String> hiddenIngredients = Collections.emptyList();
+    public IJeiRuntime runtime;
 
     public static boolean isModLoaded() {
         if(ModList.get().isLoaded("jei")){
@@ -31,7 +37,6 @@ public class JeiIntegration implements IModPlugin {
         }
     }
 
-    Collection<?> ingredientlist;
 
     @Override
     public ResourceLocation getPluginUid() {
@@ -45,14 +50,57 @@ public class JeiIntegration implements IModPlugin {
     }
 
     @SubscribeEvent
-    public void playerrightclick(PlayerInteractEvent.RightClickEmpty event){ //for testing runtime stuff. Runtime somehow ends up null by the time this code runs
-        Collection<IIngredientType<?>> alltypes = runtime.getIngredientManager().getRegisteredIngredientTypes();
-        alltypes.forEach(type ->{
-            if(type.getUid().equals("ItemStack")){
-                Collection<?> allIngredients = runtime.getIngredientManager().getAllIngredients(type);
-            }
-        });
-
+    public void onPlayerSpawnEvent(EntityJoinLevelEvent event){ //need something that triggers after this point, this triggers too early
+        Player player = Minecraft.getInstance().player;
+        if(player == null) return;
+        if(event.getEntity().is(player)){
+            if(this.runtime == null) return;
+            HandleListReset();
+        }
     }
 
+    public void HandleListReset(){
+
+        //get the manager, player and aptitude levels
+        IIngredientManager ingredientManager = this.runtime.getIngredientManager();
+        Player player = Minecraft.getInstance().player;
+        AptitudeCapability provider = AptitudeCapability.get(player);
+
+        // loop thru different stack types (itemtype, and fluidtype)
+        Iterator<IIngredientType<?>> ingtypesiterator = ingredientManager.getRegisteredIngredientTypes().iterator();
+        while(ingtypesiterator.hasNext()){
+
+            //loop thru each entry in the list
+            IIngredientType<?> ingtype = ingtypesiterator.next();
+            String temp = ingtype.getUid();
+            Iterator<?> itemstackiterator = ingredientManager.getAllIngredients(ingtype).iterator();
+            while(itemstackiterator.hasNext()){
+
+                //get the actual item "modname:itemname" string (wow this is overcomplicated)
+                Object itemtypeobject = itemstackiterator.next();
+                Optional<? extends ITypedIngredient<?>> itemStackOptional = ingredientManager.createTypedIngredient(itemtypeobject);
+                ItemStack itemStack = itemStackOptional.get().getItemStack().get();
+                String itemname = ForgeRegistries.ITEMS.getKey(itemStack.getItem()).toString();
+
+                //check if you can use the item
+                if (!provider.canUseSpecificID(player,itemname)) {
+
+                    //print that the item was hidden
+                    System.out.println("JLFork hid item: " + itemname);
+                    //record the item to a collection
+                    hiddenIngredients.add(itemname); //err for some fuckin reason? i do not understand. something about immutables
+
+                    //somehow set the visibility here? :(
+                }
+            };
+        };
+    }
+
+    /*
+    @SubscribeEvent
+    public void handleplayerlevelup(LevelUpEvent event){
+        Player player  = event.getPlayer();
+
+    }
+     */
 }
