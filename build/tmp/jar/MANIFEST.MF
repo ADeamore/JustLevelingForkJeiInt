@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: justlevelingfork
+Specification-Vendor: SeniorS
+Specification-Version: 1
+Implementation-Title: JustLevelingFork
+Implementation-Version: 1.1.3
+Implementation-Vendor: SeniorS
+Implementation-Timestamp: 2024-09-23T16:01:36-1000
+MixinConfigs: justlevelingfork.mixins.json
+
