@@ -3,8 +3,10 @@ package com.seniors.justlevelingfork.handler;
 import com.seniors.justlevelingfork.JustLevelingFork;
 import com.seniors.justlevelingfork.client.core.Aptitudes;
 import com.seniors.justlevelingfork.config.models.LockItem;
+import com.seniors.justlevelingfork.integration.EmiIntegration;
 import com.seniors.justlevelingfork.registry.RegistryAptitudes;
 import com.seniors.justlevelingfork.registry.aptitude.Aptitude;
+import net.minecraft.client.Minecraft;
 
 import java.util.*;
 
@@ -35,6 +37,7 @@ public class HandlerAptitude {
 
         // Replace the old aptitudes map so client lock items doesn't affect while playing on server.
         Aptitudes = aptitudeMap;
+
     }
 
     public static Map<String, List<Aptitudes>> getAptitude() {

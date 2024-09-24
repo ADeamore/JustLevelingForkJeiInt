@@ -9,6 +9,7 @@ import com.seniors.justlevelingfork.common.capability.AptitudeCapability;
 import com.seniors.justlevelingfork.handler.HandlerCommonConfig;
 import com.seniors.justlevelingfork.handler.HandlerConfigClient;
 import com.seniors.justlevelingfork.handler.HandlerResources;
+import com.seniors.justlevelingfork.integration.EmiIntegration;
 import com.seniors.justlevelingfork.integration.KubeJSIntegration;
 import com.seniors.justlevelingfork.network.packet.common.*;
 import com.seniors.justlevelingfork.registry.RegistryAptitudes;
@@ -459,6 +460,10 @@ public class JustLevelingScreen extends Screen {
                         }
                         else {
                             AptitudeLevelUpSP.send(aptitude);
+                        }
+
+                        if(Minecraft.getInstance().level.isClientSide && EmiIntegration.isModLoaded()){
+                            EmiIntegration.updatelist();
                         }
 
                         this.checkMouse = false;

@@ -6,12 +6,11 @@ import com.seniors.justlevelingfork.client.gui.OverlayTitleGui;
 import com.seniors.justlevelingfork.client.gui.TabJustLeveling;
 import com.seniors.justlevelingfork.client.screen.JustLevelingScreen;
 import com.seniors.justlevelingfork.handler.HandlerCommonConfig;
-import com.seniors.justlevelingfork.integration.JeiIntegration;
+import com.seniors.justlevelingfork.integration.EmiIntegration;
 import com.seniors.justlevelingfork.integration.L2TabsIntegration;
 import com.seniors.justlevelingfork.registry.RegistryClientEvents;
 import com.seniors.justlevelingfork.registry.RegistryItems;
 import dev.xkmc.l2tabs.tabs.core.TabRegistry;
-import mezz.jei.api.runtime.IJeiRuntime;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
@@ -62,8 +61,8 @@ public class JustLevelingClient {
                     TabRegistry.registerTab(3500, TabJustLeveling::new, RegistryItems.LEVELING_BOOK, Component.literal("Aptitudes"));
                 });
             }
-            if(JeiIntegration.isModLoaded()){ //implementation by Avvy
-                MinecraftForge.EVENT_BUS.register(new JeiIntegration());}
+            if(EmiIntegration.isModLoaded()){ //implementation by Avvy
+                MinecraftForge.EVENT_BUS.register(new EmiIntegration());}
         }
 
         @SubscribeEvent

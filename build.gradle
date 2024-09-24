@@ -180,21 +180,10 @@ repositories {
         url = 'https://thedarkcolour.github.io/KotlinForForge/'
     }
 
-    //jei implementation
+    //emi compat
     maven {
-        // location of the maven that hosts JEI files before January 2023
-        name = "Progwml6's maven"
-        url = "https://dvs1.progwml6.com/files/maven/"
-    }
-    maven {
-        // location of the maven that hosts JEI files since January 2023
-        name = "Jared's maven"
-        url = "https://maven.blamejared.com/"
-    }
-    maven {
-        // location of a maven mirror for JEI files, as a fallback
-        name = "ModMaven"
-        url = "https://modmaven.dev"
+        name = "TerraformersMC"
+        url = "https://maven.terraformersmc.com/"
     }
 }
 
@@ -264,11 +253,9 @@ dependencies {
     // FORGE
     implementation 'thedarkcolour:kotlinforforge:4.10.0'
 
-    //jei
-    // get api
-    implementation(fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.12.2.51"))
-    // get runtime
-    implementation(fg.deobf("mezz.jei:jei-1.20.1-forge:15.12.2.51"))
+    // Emi compat
+    compileOnly fg.deobf("dev.emi:emi-forge:1.1.13+1.20.1:api")
+    implementation fg.deobf("dev.emi:emi-forge:1.1.13+1.20.1")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
