@@ -1,286 +1,363 @@
-[19Oct2024 00:09:59.546] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\Avaela\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mixin.config, justlevelingfork.mixins.json]
-[19Oct2024 00:09:59.554] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Amazon.com Inc.; OS Windows 10 arch amd64 version 10.0
-[19Oct2024 00:09:59.758] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[19Oct2024 00:09:59.901] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[19Oct2024 00:10:00.225] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[19Oct2024 00:10:00.419] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Avaela/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23129!/ Service=ModLauncher Env=CLIENT
-[19Oct2024 00:10:00.536] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 2070/PCIe/SSE2 GL version 4.6.0 NVIDIA 560.94, NVIDIA Corporation
-[19Oct2024 00:10:01.012] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Avaela\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.0\d7ebc62120f202109e300e084ca1a31a7b946a62\javafmllanguage-1.20.1-47.3.0.jar is missing mods.toml file
-[19Oct2024 00:10:01.018] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Avaela\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.0\1bf3e845ea0ce750096da8c71c8364b188ab74d4\lowcodelanguage-1.20.1-47.3.0.jar is missing mods.toml file
-[19Oct2024 00:10:01.024] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Avaela\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.0\6093682e943ddccbabf70539319d7f2fe64db2e7\mclanguage-1.20.1-47.3.0.jar is missing mods.toml file
-[19Oct2024 00:10:01.032] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Avaela\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.0\3b6be96aba3e323f3c918e8ef6a96312d82d76ad\fmlcore-1.20.1-47.3.0.jar is missing mods.toml file
-[19Oct2024 00:10:01.784] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: mixinextras. Using Mod File: C:\Users\Avaela\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-forge\0.4.0\95567f46545b29722b1ad56aa218b842bc47b726\mixinextras-forge-0.4.0.jar
-[19Oct2024 00:10:01.784] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 13 dependencies adding them to mods collection
-[19Oct2024 00:10:04.590] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[19Oct2024 00:10:04.676] [main/ERROR] [mixin/]: Mixin config yacl.mixins.json does not specify "minVersion" property
-[19Oct2024 00:10:04.690] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Avaela\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
-[19Oct2024 00:10:04.813] [main/WARN] [mixin/]: Reference map 'justlevelingfork.refmap.json' for justlevelingfork.mixins.json could not be read. If this is a development environment you can ignore this message
-[19Oct2024 00:10:05.366] [main/INFO] [mixin/]: Remapping refMap emi-xplat-refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
-[19Oct2024 00:10:05.386] [main/WARN] [mixin/]: Reference map 'emi-forge-refmap.json' for emi-forge.mixins.json could not be read. If this is a development environment you can ignore this message
-[19Oct2024 00:10:05.391] [main/INFO] [mixin/]: Remapping refMap rhino-common-refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
-[19Oct2024 00:10:05.397] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
-[19Oct2024 00:10:05.404] [main/INFO] [mixin/]: Remapping refMap caelus.refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
-[19Oct2024 00:10:05.410] [main/INFO] [mixin/]: Remapping refMap curios.refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
-[19Oct2024 00:10:05.551] [main/INFO] [mixin/]: Remapping refMap architectury-forge-refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
-[19Oct2024 00:10:05.558] [main/INFO] [mixin/]: Remapping refMap architectury-common-refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
-[19Oct2024 00:10:05.564] [main/INFO] [mixin/]: Remapping refMap kubejs-forge-refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
-[19Oct2024 00:10:05.571] [main/INFO] [mixin/]: Remapping refMap kubejs-common-refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
-[19Oct2024 00:10:05.575] [main/INFO] [mixin/]: Remapping refMap YetAnotherConfigLib-1.20.1-forge-refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
-[19Oct2024 00:10:06.182] [main/WARN] [mixin/]: Error loading class: com/vicmatskiv/pointblank/item/GunItem (java.lang.ClassNotFoundException: com.vicmatskiv.pointblank.item.GunItem)
-[19Oct2024 00:10:06.182] [main/WARN] [mixin/]: @Mixin target com.vicmatskiv.pointblank.item.GunItem was not found justlevelingfork.mixins.json:MixGunItem
-[19Oct2024 00:10:06.266] [main/WARN] [mixin/]: Error loading class: mezz/jei/library/load/PluginCaller (java.lang.ClassNotFoundException: mezz.jei.library.load.PluginCaller)
-[19Oct2024 00:10:06.923] [main/WARN] [mixin/]: Error loading class: mezz/modnametooltip/TooltipEventHandler (java.lang.ClassNotFoundException: mezz.modnametooltip.TooltipEventHandler)
-[19Oct2024 00:10:06.940] [main/WARN] [mixin/]: Error loading class: me/shedaniel/rei/impl/client/ClientHelperImpl (java.lang.ClassNotFoundException: me.shedaniel.rei.impl.client.ClientHelperImpl)
-[19Oct2024 00:10:07.021] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.0).
-[19Oct2024 00:10:14.842] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 317 milliseconds
-[19Oct2024 00:10:18.898] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Avaela/Documents/JustLeveling-Fork/build/fg_cache/net/minecraftforge/forge/1.20.1-47.3.0_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.0_mapped_parchment_2023.09.03-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[19Oct2024 00:10:18.899] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Avaela/Documents/JustLeveling-Fork/build/fg_cache/net/minecraftforge/forge/1.20.1-47.3.0_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.0_mapped_parchment_2023.09.03-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[19Oct2024 00:10:18.922] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[19Oct2024 00:10:18.932] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[19Oct2024 00:10:19.127] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
-[19Oct2024 00:10:19.204] [Render thread/INFO] [KubeJS/]: Loaded client.properties
-[19Oct2024 00:10:19.971] [modloading-worker-0/INFO] [YetAnotherConfigLib/]: Deserializing YACLConfig from 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\yacl.json5'
-[19Oct2024 00:10:19.974] [modloading-worker-0/INFO] [KubeJS/]: Loaded common.properties
-[19Oct2024 00:10:19.975] [modloading-worker-0/INFO] [KubeJS/]: Loaded dev.properties
-[19Oct2024 00:10:19.999] [modloading-worker-0/INFO] [KubeJS Startup/]: Capturing errors for startup scripts enabled
-[19Oct2024 00:10:19.999] [modloading-worker-0/INFO] [KubeJS/]: Looking for KubeJS plugins...
-[19Oct2024 00:10:20.033] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source kubejs
-[19Oct2024 00:10:20.109] [modloading-worker-0/WARN] [KubeJS/]: Plugin dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration does not have required mod gamestages loaded, skipping
-[19Oct2024 00:10:20.118] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.0, for MC 1.20.1 with MCP 20230612.114412
-[19Oct2024 00:10:20.118] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.0 Initialized
-[19Oct2024 00:10:20.139] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source justlevelingfork
-[19Oct2024 00:10:20.152] [modloading-worker-0/INFO] [KubeJS/]: Done in 149.8 ms
-[19Oct2024 00:10:20.197] [modloading-worker-0/INFO] [YetAnotherConfigLib/]: Deserializing HandlerConvergenceItemsConfig from 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\JLFork\justleveling-fork.convergence-items.json5'
-[19Oct2024 00:10:20.207] [modloading-worker-0/INFO] [YetAnotherConfigLib/]: Deserializing HandlerTitlesConfig from 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\JLFork\justleveling-fork.titles.json5'
-[19Oct2024 00:10:20.244] [modloading-worker-0/INFO] [YetAnotherConfigLib/]: Deserializing HandlerCommonConfig from 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\JLFork\justleveling-fork.common.json5'
-[19Oct2024 00:10:20.271] [modloading-worker-0/INFO] [YetAnotherConfigLib/]: Deserializing HandlerLockItemsConfig from 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\JLFork\justleveling-fork.lockItems.json5'
-[19Oct2024 00:10:20.298] [modloading-worker-0/INFO] [YetAnotherConfigLib/]: Deserializing HandlerLockEnchantsConfig from 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\JLFork\justleveling-fork.lockEnchants.json5'
-[19Oct2024 00:10:20.457] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id architectury:sync_ids
-[19Oct2024 00:10:20.458] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id architectury:sync_ids
-[19Oct2024 00:10:20.615] [modloading-worker-0/INFO] [thedarkcolour.kotlinforforge.test.KotlinForForge/]: Kotlin For Forge Enabled!
-[19Oct2024 00:10:20.618] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Loading Rhino Minecraft remapper...
-[19Oct2024 00:10:20.620] [modloading-worker-0/INFO] [dev.latvian.mods.rhino.mod.util.RhinoProperties/]: Rhino properties loaded.
-[19Oct2024 00:10:20.646] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Loading mappings for 1.20.1
-[19Oct2024 00:10:20.829] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Done in 0.211 s
-[19Oct2024 00:10:20.872] [modloading-worker-0/INFO] [com.seniors.justlevelingfork.JustLevelingFork/]: >> NEW VERSION AVAILABLE: 1.1.6
-[19Oct2024 00:10:21.469] [modloading-worker-0/INFO] [KubeJS Startup/]: example.js#5: Hello, World! (Loaded startup scripts)
-[19Oct2024 00:10:21.471] [modloading-worker-0/INFO] [KubeJS Startup/]: Loaded script startup_scripts:example.js in 0.071 s
-[19Oct2024 00:10:21.474] [modloading-worker-0/INFO] [KubeJS Startup/]: Loaded 1/1 KubeJS startup scripts in 0.642 s with 0 errors and 0 warnings
-[19Oct2024 00:10:21.581] [modloading-worker-0/INFO] [KubeJS Client/]: example.js#5: Hello, World! (Loaded client scripts)
-[19Oct2024 00:10:21.582] [modloading-worker-0/INFO] [KubeJS Client/]: Loaded script client_scripts:example.js in 0.001 s
-[19Oct2024 00:10:21.582] [modloading-worker-0/INFO] [KubeJS Client/]: Loaded 1/1 KubeJS client scripts in 0.036 s with 0 errors and 0 warnings
-[19Oct2024 00:10:21.620] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id kubejs:send_data_from_client
-[19Oct2024 00:10:21.622] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:send_data_from_server
-[19Oct2024 00:10:21.623] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:paint
-[19Oct2024 00:10:21.625] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:add_stage
-[19Oct2024 00:10:21.626] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:remove_stage
-[19Oct2024 00:10:21.627] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:sync_stages
-[19Oct2024 00:10:21.629] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id kubejs:first_click
-[19Oct2024 00:10:21.630] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:toast
-[19Oct2024 00:10:21.632] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:reload_startup_scripts
-[19Oct2024 00:10:21.633] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:display_server_errors
-[19Oct2024 00:10:21.634] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:display_client_errors
-[19Oct2024 00:10:21.746] [Render thread/INFO] [KubeJS/]: Skipping minecraft:sound_event registry
-[19Oct2024 00:10:21.758] [Render thread/INFO] [KubeJS/]: Skipping minecraft:fluid registry
-[19Oct2024 00:10:21.767] [Render thread/INFO] [KubeJS/]: Skipping minecraft:block registry
-[19Oct2024 00:10:21.776] [Render thread/INFO] [KubeJS/]: Skipping minecraft:attribute registry
-[19Oct2024 00:10:21.777] [Render thread/INFO] [KubeJS/]: Skipping minecraft:mob_effect registry
-[19Oct2024 00:10:21.779] [Render thread/INFO] [KubeJS/]: Skipping minecraft:particle_type registry
-[19Oct2024 00:10:21.820] [Render thread/INFO] [KubeJS/]: Skipping minecraft:item registry
-[19Oct2024 00:10:21.825] [Render thread/INFO] [KubeJS/]: Skipping minecraft:entity_type registry
-[19Oct2024 00:10:21.827] [Render thread/INFO] [KubeJS/]: Skipping minecraft:sensor_type registry
-[19Oct2024 00:10:21.829] [Render thread/INFO] [KubeJS/]: Skipping minecraft:memory_module_type registry
-[19Oct2024 00:10:21.830] [Render thread/INFO] [KubeJS/]: Skipping minecraft:potion registry
-[19Oct2024 00:10:21.832] [Render thread/INFO] [KubeJS/]: Skipping minecraft:game_event registry
-[19Oct2024 00:10:21.833] [Render thread/INFO] [KubeJS/]: Skipping minecraft:enchantment registry
-[19Oct2024 00:10:21.840] [Render thread/INFO] [KubeJS/]: Skipping minecraft:block_entity_type registry
-[19Oct2024 00:10:21.842] [Render thread/INFO] [KubeJS/]: Skipping minecraft:painting_variant registry
-[19Oct2024 00:10:21.844] [Render thread/INFO] [KubeJS/]: Skipping minecraft:stat_type registry
-[19Oct2024 00:10:21.847] [Render thread/INFO] [KubeJS/]: Skipping minecraft:custom_stat registry
-[19Oct2024 00:10:21.848] [Render thread/INFO] [KubeJS/]: Skipping minecraft:chunk_status registry
-[19Oct2024 00:10:21.854] [Render thread/INFO] [KubeJS/]: Skipping minecraft:rule_test registry
-[19Oct2024 00:10:21.856] [Render thread/INFO] [KubeJS/]: Skipping minecraft:rule_block_entity_modifier registry
-[19Oct2024 00:10:21.857] [Render thread/INFO] [KubeJS/]: Skipping minecraft:pos_rule_test registry
-[19Oct2024 00:10:21.876] [Render thread/INFO] [KubeJS/]: Skipping minecraft:menu registry
-[19Oct2024 00:10:21.878] [Render thread/INFO] [KubeJS/]: Skipping minecraft:recipe_type registry
-[19Oct2024 00:10:21.880] [Render thread/INFO] [KubeJS/]: Skipping minecraft:recipe_serializer registry
-[19Oct2024 00:10:21.899] [Render thread/INFO] [KubeJS/]: Skipping minecraft:position_source_type registry
-[19Oct2024 00:10:21.902] [Render thread/INFO] [KubeJS/]: Skipping minecraft:command_argument_type registry
-[19Oct2024 00:10:21.907] [Render thread/INFO] [KubeJS/]: Skipping minecraft:villager_type registry
-[19Oct2024 00:10:21.908] [Render thread/INFO] [KubeJS/]: Skipping minecraft:villager_profession registry
-[19Oct2024 00:10:21.909] [Render thread/INFO] [KubeJS/]: Skipping minecraft:point_of_interest_type registry
-[19Oct2024 00:10:21.909] [Render thread/INFO] [KubeJS/]: Skipping minecraft:schedule registry
-[19Oct2024 00:10:21.910] [Render thread/INFO] [KubeJS/]: Skipping minecraft:activity registry
-[19Oct2024 00:10:21.912] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_pool_entry_type registry
-[19Oct2024 00:10:21.912] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_function_type registry
-[19Oct2024 00:10:21.913] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_condition_type registry
-[19Oct2024 00:10:21.917] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_number_provider_type registry
-[19Oct2024 00:10:21.918] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_nbt_provider_type registry
-[19Oct2024 00:10:21.919] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_score_provider_type registry
-[19Oct2024 00:10:21.919] [Render thread/INFO] [KubeJS/]: Skipping minecraft:float_provider_type registry
-[19Oct2024 00:10:21.920] [Render thread/INFO] [KubeJS/]: Skipping minecraft:int_provider_type registry
-[19Oct2024 00:10:21.921] [Render thread/INFO] [KubeJS/]: Skipping minecraft:height_provider_type registry
-[19Oct2024 00:10:21.922] [Render thread/INFO] [KubeJS/]: Skipping minecraft:block_predicate_type registry
-[19Oct2024 00:10:21.923] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/carver registry
-[19Oct2024 00:10:21.924] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/feature registry
-[19Oct2024 00:10:21.925] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_processor registry
-[19Oct2024 00:10:21.926] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_placement registry
-[19Oct2024 00:10:21.926] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_piece registry
-[19Oct2024 00:10:21.928] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_type registry
-[19Oct2024 00:10:21.929] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/placement_modifier_type registry
-[19Oct2024 00:10:21.929] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/block_state_provider_type registry
-[19Oct2024 00:10:21.930] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/foliage_placer_type registry
-[19Oct2024 00:10:21.931] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/trunk_placer_type registry
-[19Oct2024 00:10:21.932] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/root_placer_type registry
-[19Oct2024 00:10:21.932] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/tree_decorator_type registry
-[19Oct2024 00:10:21.933] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/feature_size_type registry
-[19Oct2024 00:10:21.933] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/biome_source registry
-[19Oct2024 00:10:21.934] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/chunk_generator registry
-[19Oct2024 00:10:21.935] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/material_condition registry
-[19Oct2024 00:10:21.935] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/material_rule registry
-[19Oct2024 00:10:21.936] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/density_function_type registry
-[19Oct2024 00:10:21.937] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_pool_element registry
-[19Oct2024 00:10:21.937] [Render thread/INFO] [KubeJS/]: Skipping minecraft:cat_variant registry
-[19Oct2024 00:10:21.938] [Render thread/INFO] [KubeJS/]: Skipping minecraft:frog_variant registry
-[19Oct2024 00:10:21.939] [Render thread/INFO] [KubeJS/]: Skipping minecraft:banner_pattern registry
-[19Oct2024 00:10:21.940] [Render thread/INFO] [KubeJS/]: Skipping minecraft:instrument registry
-[19Oct2024 00:10:21.940] [Render thread/INFO] [KubeJS/]: Skipping minecraft:decorated_pot_patterns registry
-[19Oct2024 00:10:21.942] [Render thread/INFO] [KubeJS/]: Skipping minecraft:creative_mode_tab registry
-[19Oct2024 00:10:21.946] [Render thread/INFO] [KubeJS/]: Skipping forge:biome_modifier_serializers registry
-[19Oct2024 00:10:21.957] [Render thread/INFO] [KubeJS/]: Skipping forge:display_contexts registry
-[19Oct2024 00:10:21.960] [Render thread/INFO] [KubeJS/]: Skipping forge:entity_data_serializers registry
-[19Oct2024 00:10:21.961] [Render thread/INFO] [KubeJS/]: Skipping forge:fluid_type registry
-[19Oct2024 00:10:21.972] [Render thread/INFO] [KubeJS/]: Skipping forge:global_loot_modifier_serializers registry
-[19Oct2024 00:10:21.973] [Render thread/INFO] [KubeJS/]: Skipping forge:holder_set_type registry
-[19Oct2024 00:10:21.982] [Render thread/INFO] [KubeJS/]: Skipping forge:structure_modifier_serializers registry
-[19Oct2024 00:10:21.983] [Render thread/INFO] [KubeJS/]: Skipping justlevelingfork:aptitudes registry
-[19Oct2024 00:10:21.987] [Render thread/INFO] [KubeJS/]: Skipping justlevelingfork:passives registry
-[19Oct2024 00:10:21.990] [Render thread/INFO] [KubeJS/]: Skipping justlevelingfork:skills registry
-[19Oct2024 00:10:21.993] [Render thread/INFO] [KubeJS/]: Skipping justlevelingfork:titles registry
-[19Oct2024 00:10:21.995] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/biome registry
-[19Oct2024 00:10:22.779] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [justlevelingfork]
-[19Oct2024 00:10:23.275] [Render thread/INFO] [KubeJS/]: # Walking namespace 'kubejs'
-[19Oct2024 00:10:23.281] [Render thread/INFO] [KubeJS/]: - File found: 'kubejs:textures/block/example_block.png' (247 bytes)
-[19Oct2024 00:10:23.282] [Render thread/INFO] [KubeJS/]: - File found: 'kubejs:textures/item/example_item.png' (372 bytes)
-[19Oct2024 00:10:23.282] [Render thread/INFO] [KubeJS/]: Generated CLIENT_RESOURCES data (3 files)
-[19Oct2024 00:10:23.285] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, KubeJS Resource Pack [assets]
-[19Oct2024 00:10:23.533] [Worker-Main-3/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
-[19Oct2024 00:10:23.734] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [framework] Starting version check at https://mrcrayfish.com/modupdatejson?id=framework
-[19Oct2024 00:10:23.842] [Render thread/INFO] [KubeJS Client/]: Client resource reload complete!
-[19Oct2024 00:10:24.991] [Worker-Main-2/INFO] [KubeJS/]: CLIENT SETUP
-[19Oct2024 00:10:25.129] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [framework] Found status: BETA_OUTDATED Current: 0.7.6 Target: 0.7.11
-[19Oct2024 00:10:25.129] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[19Oct2024 00:10:25.581] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.3.0 Target: null
-[19Oct2024 00:10:27.206] [Worker-Main-6/INFO] [KubeJS Startup/]: Capturing errors for startup scripts disabled
-[19Oct2024 00:10:28.960] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[19Oct2024 00:10:28.961] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[19Oct2024 00:10:29.016] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Headphones (WH-CH700N Stereo)
-[19Oct2024 00:10:29.017] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[19Oct2024 00:10:29.223] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[19Oct2024 00:10:29.241] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[19Oct2024 00:10:29.244] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[19Oct2024 00:10:29.246] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[19Oct2024 00:10:29.247] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[19Oct2024 00:10:29.254] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[19Oct2024 00:10:29.257] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[19Oct2024 00:10:29.257] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[19Oct2024 00:10:29.258] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[19Oct2024 00:10:29.464] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[19Oct2024 00:10:29.552] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[19Oct2024 00:10:29.554] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[19Oct2024 00:10:29.554] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[19Oct2024 00:10:29.853] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[19Oct2024 00:10:54.074] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[19Oct2024 00:10:55.008] [Render thread/INFO] [KubeJS/]: Generated SERVER_DATA data (1 files)
-[19Oct2024 00:10:55.021] [Render thread/INFO] [KubeJS Server/]: Capturing errors for server scripts enabled
-[19Oct2024 00:10:55.048] [Render thread/INFO] [KubeJS Server/]: example.js#5: Hello, World! (Loaded server scripts)
-[19Oct2024 00:10:55.048] [Render thread/INFO] [KubeJS Server/]: Loaded script server_scripts:example.js in 0.001 s
-[19Oct2024 00:10:55.049] [Render thread/INFO] [KubeJS Server/]: Loaded 1/1 KubeJS server scripts in 0.023 s with 0 errors and 0 warnings
-[19Oct2024 00:10:55.049] [Render thread/INFO] [KubeJS Server/]: Scripts loaded
-[19Oct2024 00:10:57.372] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
-[19Oct2024 00:10:57.481] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
-[19Oct2024 00:10:57.494] [Render thread/INFO] [top.theillusivec4.curios.Curios/]: Loaded 10 curio slots
-[19Oct2024 00:10:57.501] [Render thread/INFO] [top.theillusivec4.curios.Curios/]: Loaded 1 curio entities
-[19Oct2024 00:10:58.221] [Render thread/INFO] [EMI/]: [EMI] Recipes synchronized, waiting for tags to reload EMI...
-[19Oct2024 00:10:58.223] [Render thread/INFO] [EMI/]: [EMI] Disconnecting from server, EMI data cleared
-[19Oct2024 00:10:58.225] [Thread-6/INFO] [EMI/]: [EMI] Clearing data
-[19Oct2024 00:10:58.357] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
-[19Oct2024 00:10:58.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[19Oct2024 00:10:58.488] [Server thread/INFO] [Framework/]: Loading server configs...
-[19Oct2024 00:10:58.806] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[19Oct2024 00:10:58.811] [Server thread/INFO] [KubeJS Server/]: Capturing errors for server scripts disabled
-[19Oct2024 00:10:58.811] [Server thread/INFO] [KubeJS Server/]: Server resource reload complete!
-[19Oct2024 00:11:02.067] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[19Oct2024 00:11:02.067] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[19Oct2024 00:11:02.067] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[19Oct2024 00:11:02.067] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[19Oct2024 00:11:02.067] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[19Oct2024 00:11:02.067] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[19Oct2024 00:11:02.067] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[19Oct2024 00:11:02.335] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[19Oct2024 00:11:02.834] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 11%
-[19Oct2024 00:11:03.329] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 45%
-[19Oct2024 00:11:03.818] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 83%
-[19Oct2024 00:11:04.085] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[19Oct2024 00:11:04.091] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 5277 ms
-[19Oct2024 00:11:04.385] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
-[19Oct2024 00:11:04.390] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[19Oct2024 00:11:04.525] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[19Oct2024 00:11:05.169] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
-[19Oct2024 00:11:05.243] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:34b9bccf] logged in with entity id 13 at (2.0567726825747314, -59.0, 8.419872649053415)
-[19Oct2024 00:11:05.349] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[19Oct2024 00:11:05.905] [Render thread/INFO] [EMI/]: [EMI] Tags synchronized, reloading EMI
-[19Oct2024 00:11:05.906] [Render thread/INFO] [EMI/]: [EMI] Starting Reload
-[19Oct2024 00:11:05.907] [Thread-13/INFO] [EMI/]: [EMI] Starting EMI reload...
-[19Oct2024 00:11:05.907] [Thread-13/INFO] [EMI/]: [EMI] Clearing data
-[19Oct2024 00:11:05.925] [Render thread/INFO] [EMI/]: [EMI] Recipes synchronized, waiting for tags to reload EMI...
-[19Oct2024 00:11:05.937] [Thread-13/INFO] [EMI/]: [EMI] Initializing plugin from emi
-[19Oct2024 00:11:05.987] [Thread-13/INFO] [EMI/]: [EMI] Initialized plugin from emi in 46ms
-[19Oct2024 00:11:05.987] [Thread-13/INFO] [EMI/]: [EMI] Initializing plugin from justlevelingfork
-[19Oct2024 00:11:05.987] [Thread-13/INFO] [EMI/]: [EMI] Initialized plugin from justlevelingfork in 0ms
-[19Oct2024 00:11:05.989] [Thread-13/INFO] [EMI/]: [EMI] Processing tags
-[19Oct2024 00:11:05.996] [Thread-13/ERROR] [EMI/]: [EMI] Untranslated tag #forge:elytra
-[19Oct2024 00:11:05.996] [Thread-13/INFO] [EMI/]: [EMI]  Tag warning can be disabled in the config, EMI docs describe how to add a translation or exclude tags.
-[19Oct2024 00:11:06.020] [Thread-13/INFO] [EMI/]: [EMI] Constructing index
-[19Oct2024 00:11:06.028] [Thread-13/INFO] [EMI/]: [EMI] Reloading item groups on client thread...
-[19Oct2024 00:11:06.117] [Render thread/INFO] [YetAnotherConfigLib/]: Serializing class com.seniors.justlevelingfork.handler.HandlerCommonConfig to 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\JLFork\justleveling-fork.common.json5'
-[19Oct2024 00:11:06.125] [Render thread/INFO] [YetAnotherConfigLib/]: Serializing class com.seniors.justlevelingfork.handler.HandlerCommonConfig to 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\JLFork\justleveling-fork.common.json5'
-[19Oct2024 00:11:06.325] [Thread-13/INFO] [EMI/]: [EMI] Reloading item groups on client thread took 297ms
-[19Oct2024 00:11:06.341] [Thread-13/INFO] [EMI/]: [EMI] Loading plugin from emi
-[19Oct2024 00:11:06.665] [Thread-13/INFO] [EMI/]: [EMI] Reloaded plugin from emi in 324ms
-[19Oct2024 00:11:06.665] [Thread-13/INFO] [EMI/]: [EMI] Loading plugin from justlevelingfork
-[19Oct2024 00:11:06.680] [Thread-13/INFO] [EMI/]: [EMI] Reloaded plugin from justlevelingfork in 15ms
-[19Oct2024 00:11:06.681] [Thread-13/INFO] [EMI/]: [EMI] Baking index
-[19Oct2024 00:11:06.729] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 2 advancements
-[19Oct2024 00:11:06.744] [Thread-13/INFO] [EMI/]: [EMI] Registering late recipes
-[19Oct2024 00:11:06.744] [Thread-13/INFO] [EMI/]: [EMI] Baking recipes
-[19Oct2024 00:11:06.904] [Thread-13/INFO] [EMI/]: [EMI] Baked 3082 recipes in 157ms
-[19Oct2024 00:11:06.914] [Thread-13/INFO] [EMI/]: [EMI] Baking search
-[19Oct2024 00:11:07.109] [Thread-13/INFO] [EMI/]: [EMI] Finishing up
-[19Oct2024 00:11:07.208] [Thread-13/INFO] [EMI/]: [EMI] Reloaded EMI in 1301ms
-[19Oct2024 00:11:07.242] [Thread-14/INFO] [EMI/]: [EMI] Baked recipes after reload in 139ms
-[19Oct2024 00:11:20.299] [Server thread/INFO] [EMI/]: [EMI] Dev cheated in 1 blaze_spawn_egg
-[19Oct2024 00:11:25.135] [Server thread/INFO] [EMI/]: [EMI] Dev cheated in 1 goat_spawn_egg
-[19Oct2024 00:13:09.337] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[19Oct2024 00:13:09.356] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[19Oct2024 00:13:09.370] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[19Oct2024 00:13:09.372] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[19Oct2024 00:13:10.230] [Render thread/INFO] [EMI/]: [EMI] Disconnecting from server, EMI data cleared
-[19Oct2024 00:13:10.231] [Thread-24/INFO] [EMI/]: [EMI] Clearing data
-[19Oct2024 00:13:10.296] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[19Oct2024 00:13:10.296] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[19Oct2024 00:13:10.309] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
-[19Oct2024 00:13:10.338] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[19Oct2024 00:13:10.339] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[19Oct2024 00:13:10.339] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[19Oct2024 00:13:11.273] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[19Oct2024 00:13:11.499] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[19Oct2024 00:13:11.501] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[19Oct2024 00:13:11.536] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (2)): All chunks are saved
-[19Oct2024 00:13:11.536] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[19Oct2024 00:13:11.536] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[19Oct2024 00:13:11.536] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[19Oct2024 00:13:12.391] [Server thread/INFO] [Framework/]: Unloading server configs...
-[19Oct2024 00:13:13.737] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
-[19Oct2024 00:13:13.738] [Render thread/INFO] [EMI/]: [EMI] Disconnecting from server, EMI data cleared
-[19Oct2024 00:13:13.739] [Thread-27/INFO] [EMI/]: [EMI] Clearing data
+[19Oct2024 12:00:24.468] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\Avaela\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mixin.config, justlevelingfork.mixins.json]
+[19Oct2024 12:00:24.478] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Amazon.com Inc.; OS Windows 10 arch amd64 version 10.0
+[19Oct2024 12:00:24.704] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[19Oct2024 12:00:24.850] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[19Oct2024 12:00:25.154] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[19Oct2024 12:00:25.327] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Avaela/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23129!/ Service=ModLauncher Env=CLIENT
+[19Oct2024 12:00:25.455] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 2070/PCIe/SSE2 GL version 4.6.0 NVIDIA 560.94, NVIDIA Corporation
+[19Oct2024 12:00:25.941] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Avaela\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.0\d7ebc62120f202109e300e084ca1a31a7b946a62\javafmllanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[19Oct2024 12:00:25.948] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Avaela\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.0\1bf3e845ea0ce750096da8c71c8364b188ab74d4\lowcodelanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[19Oct2024 12:00:25.954] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Avaela\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.0\6093682e943ddccbabf70539319d7f2fe64db2e7\mclanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[19Oct2024 12:00:25.960] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Avaela\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.0\3b6be96aba3e323f3c918e8ef6a96312d82d76ad\fmlcore-1.20.1-47.3.0.jar is missing mods.toml file
+[19Oct2024 12:00:26.921] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: mixinextras. Using Mod File: C:\Users\Avaela\.gradle\caches\modules-2\files-2.1\io.github.llamalad7\mixinextras-forge\0.4.0\95567f46545b29722b1ad56aa218b842bc47b726\mixinextras-forge-0.4.0.jar
+[19Oct2024 12:00:26.922] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 13 dependencies adding them to mods collection
+[19Oct2024 12:00:29.995] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[19Oct2024 12:00:30.112] [main/ERROR] [mixin/]: Mixin config yacl.mixins.json does not specify "minVersion" property
+[19Oct2024 12:00:30.125] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Avaela\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[19Oct2024 12:00:30.268] [main/WARN] [mixin/]: Reference map 'justlevelingfork.refmap.json' for justlevelingfork.mixins.json could not be read. If this is a development environment you can ignore this message
+[19Oct2024 12:00:30.763] [main/INFO] [mixin/]: Remapping refMap emi-xplat-refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
+[19Oct2024 12:00:30.782] [main/WARN] [mixin/]: Reference map 'emi-forge-refmap.json' for emi-forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[19Oct2024 12:00:30.789] [main/INFO] [mixin/]: Remapping refMap rhino-common-refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
+[19Oct2024 12:00:30.796] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
+[19Oct2024 12:00:30.803] [main/INFO] [mixin/]: Remapping refMap caelus.refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
+[19Oct2024 12:00:30.809] [main/INFO] [mixin/]: Remapping refMap curios.refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
+[19Oct2024 12:00:30.960] [main/INFO] [mixin/]: Remapping refMap architectury-forge-refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
+[19Oct2024 12:00:30.967] [main/INFO] [mixin/]: Remapping refMap architectury-common-refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
+[19Oct2024 12:00:30.975] [main/INFO] [mixin/]: Remapping refMap kubejs-forge-refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
+[19Oct2024 12:00:30.984] [main/INFO] [mixin/]: Remapping refMap kubejs-common-refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
+[19Oct2024 12:00:30.992] [main/INFO] [mixin/]: Remapping refMap YetAnotherConfigLib-1.20.1-forge-refmap.json using C:\Users\Avaela\Documents\JustLeveling-Fork/build/createSrgToMcp/output.srg
+[19Oct2024 12:00:31.652] [main/WARN] [mixin/]: Error loading class: com/vicmatskiv/pointblank/item/GunItem (java.lang.ClassNotFoundException: com.vicmatskiv.pointblank.item.GunItem)
+[19Oct2024 12:00:31.652] [main/WARN] [mixin/]: @Mixin target com.vicmatskiv.pointblank.item.GunItem was not found justlevelingfork.mixins.json:MixGunItem
+[19Oct2024 12:00:31.731] [main/WARN] [mixin/]: Error loading class: mezz/jei/library/load/PluginCaller (java.lang.ClassNotFoundException: mezz.jei.library.load.PluginCaller)
+[19Oct2024 12:00:32.367] [main/WARN] [mixin/]: Error loading class: mezz/modnametooltip/TooltipEventHandler (java.lang.ClassNotFoundException: mezz.modnametooltip.TooltipEventHandler)
+[19Oct2024 12:00:32.388] [main/WARN] [mixin/]: Error loading class: me/shedaniel/rei/impl/client/ClientHelperImpl (java.lang.ClassNotFoundException: me.shedaniel.rei.impl.client.ClientHelperImpl)
+[19Oct2024 12:00:32.471] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.0).
+[19Oct2024 12:00:41.440] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 383 milliseconds
+[19Oct2024 12:00:44.360] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Avaela/Documents/JustLeveling-Fork/build/fg_cache/net/minecraftforge/forge/1.20.1-47.3.0_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.0_mapped_parchment_2023.09.03-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[19Oct2024 12:00:44.360] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Avaela/Documents/JustLeveling-Fork/build/fg_cache/net/minecraftforge/forge/1.20.1-47.3.0_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.0_mapped_parchment_2023.09.03-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[19Oct2024 12:00:44.385] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[19Oct2024 12:00:44.393] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[19Oct2024 12:00:44.646] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[19Oct2024 12:00:44.752] [Render thread/INFO] [KubeJS/]: Loaded client.properties
+[19Oct2024 12:00:45.501] [modloading-worker-0/INFO] [YetAnotherConfigLib/]: Deserializing YACLConfig from 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\yacl.json5'
+[19Oct2024 12:00:45.507] [modloading-worker-0/INFO] [KubeJS/]: Loaded common.properties
+[19Oct2024 12:00:45.509] [modloading-worker-0/INFO] [KubeJS/]: Loaded dev.properties
+[19Oct2024 12:00:45.528] [modloading-worker-0/INFO] [KubeJS Startup/]: Capturing errors for startup scripts enabled
+[19Oct2024 12:00:45.528] [modloading-worker-0/INFO] [KubeJS/]: Looking for KubeJS plugins...
+[19Oct2024 12:00:45.542] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source kubejs
+[19Oct2024 12:00:45.585] [modloading-worker-0/WARN] [KubeJS/]: Plugin dev.latvian.mods.kubejs.integration.forge.gamestages.GameStagesIntegration does not have required mod gamestages loaded, skipping
+[19Oct2024 12:00:45.588] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.0, for MC 1.20.1 with MCP 20230612.114412
+[19Oct2024 12:00:45.588] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.0 Initialized
+[19Oct2024 12:00:45.600] [modloading-worker-0/INFO] [KubeJS/]: Found plugin source justlevelingfork
+[19Oct2024 12:00:45.628] [modloading-worker-0/INFO] [KubeJS/]: Done in 97.79 ms
+[19Oct2024 12:00:45.693] [modloading-worker-0/INFO] [YetAnotherConfigLib/]: Deserializing HandlerConvergenceItemsConfig from 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\JLFork\justleveling-fork.convergence-items.json5'
+[19Oct2024 12:00:45.744] [modloading-worker-0/INFO] [YetAnotherConfigLib/]: Deserializing HandlerTitlesConfig from 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\JLFork\justleveling-fork.titles.json5'
+[19Oct2024 12:00:45.788] [modloading-worker-0/INFO] [YetAnotherConfigLib/]: Deserializing HandlerCommonConfig from 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\JLFork\justleveling-fork.common.json5'
+[19Oct2024 12:00:45.822] [modloading-worker-0/INFO] [YetAnotherConfigLib/]: Deserializing HandlerLockItemsConfig from 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\JLFork\justleveling-fork.lockItems.json5'
+[19Oct2024 12:00:45.845] [modloading-worker-0/INFO] [YetAnotherConfigLib/]: Deserializing HandlerLockEnchantsConfig from 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\JLFork\justleveling-fork.lockEnchants.json5'
+[19Oct2024 12:00:46.164] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id architectury:sync_ids
+[19Oct2024 12:00:46.168] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id architectury:sync_ids
+[19Oct2024 12:00:46.237] [modloading-worker-0/INFO] [thedarkcolour.kotlinforforge.test.KotlinForForge/]: Kotlin For Forge Enabled!
+[19Oct2024 12:00:46.367] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Loading Rhino Minecraft remapper...
+[19Oct2024 12:00:46.370] [modloading-worker-0/INFO] [dev.latvian.mods.rhino.mod.util.RhinoProperties/]: Rhino properties loaded.
+[19Oct2024 12:00:46.383] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Loading mappings for 1.20.1
+[19Oct2024 12:00:46.448] [modloading-worker-0/INFO] [com.seniors.justlevelingfork.JustLevelingFork/]: >> NEW VERSION AVAILABLE: 1.1.6
+[19Oct2024 12:00:46.571] [modloading-worker-0/INFO] [Rhino Script Remapper/]: Done in 0.203 s
+[19Oct2024 12:00:47.416] [modloading-worker-0/INFO] [KubeJS Startup/]: example.js#5: Hello, World! (Loaded startup scripts)
+[19Oct2024 12:00:47.420] [modloading-worker-0/INFO] [KubeJS Startup/]: Loaded script startup_scripts:example.js in 0.108 s
+[19Oct2024 12:00:47.425] [modloading-worker-0/INFO] [KubeJS Startup/]: Loaded 1/1 KubeJS startup scripts in 0.849 s with 0 errors and 0 warnings
+[19Oct2024 12:00:47.678] [modloading-worker-0/INFO] [KubeJS Client/]: example.js#5: Hello, World! (Loaded client scripts)
+[19Oct2024 12:00:47.679] [modloading-worker-0/INFO] [KubeJS Client/]: Loaded script client_scripts:example.js in 0.002 s
+[19Oct2024 12:00:47.679] [modloading-worker-0/INFO] [KubeJS Client/]: Loaded 1/1 KubeJS client scripts in 0.035 s with 0 errors and 0 warnings
+[19Oct2024 12:00:47.731] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id kubejs:send_data_from_client
+[19Oct2024 12:00:47.733] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:send_data_from_server
+[19Oct2024 12:00:47.735] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:paint
+[19Oct2024 12:00:47.737] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:add_stage
+[19Oct2024 12:00:47.738] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:remove_stage
+[19Oct2024 12:00:47.739] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:sync_stages
+[19Oct2024 12:00:47.741] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id kubejs:first_click
+[19Oct2024 12:00:47.743] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:toast
+[19Oct2024 12:00:47.745] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:reload_startup_scripts
+[19Oct2024 12:00:47.746] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:display_server_errors
+[19Oct2024 12:00:47.747] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering S2C receiver with id kubejs:display_client_errors
+[19Oct2024 12:00:47.862] [Render thread/INFO] [KubeJS/]: Skipping minecraft:sound_event registry
+[19Oct2024 12:00:47.873] [Render thread/INFO] [KubeJS/]: Skipping minecraft:fluid registry
+[19Oct2024 12:00:47.880] [Render thread/INFO] [KubeJS/]: Skipping minecraft:block registry
+[19Oct2024 12:00:47.886] [Render thread/INFO] [KubeJS/]: Skipping minecraft:attribute registry
+[19Oct2024 12:00:47.888] [Render thread/INFO] [KubeJS/]: Skipping minecraft:mob_effect registry
+[19Oct2024 12:00:47.891] [Render thread/INFO] [KubeJS/]: Skipping minecraft:particle_type registry
+[19Oct2024 12:00:47.923] [Render thread/INFO] [KubeJS/]: Skipping minecraft:item registry
+[19Oct2024 12:00:47.928] [Render thread/INFO] [KubeJS/]: Skipping minecraft:entity_type registry
+[19Oct2024 12:00:47.929] [Render thread/INFO] [KubeJS/]: Skipping minecraft:sensor_type registry
+[19Oct2024 12:00:47.930] [Render thread/INFO] [KubeJS/]: Skipping minecraft:memory_module_type registry
+[19Oct2024 12:00:47.931] [Render thread/INFO] [KubeJS/]: Skipping minecraft:potion registry
+[19Oct2024 12:00:47.932] [Render thread/INFO] [KubeJS/]: Skipping minecraft:game_event registry
+[19Oct2024 12:00:47.933] [Render thread/INFO] [KubeJS/]: Skipping minecraft:enchantment registry
+[19Oct2024 12:00:47.937] [Render thread/INFO] [KubeJS/]: Skipping minecraft:block_entity_type registry
+[19Oct2024 12:00:47.941] [Render thread/INFO] [KubeJS/]: Skipping minecraft:painting_variant registry
+[19Oct2024 12:00:47.943] [Render thread/INFO] [KubeJS/]: Skipping minecraft:stat_type registry
+[19Oct2024 12:00:47.945] [Render thread/INFO] [KubeJS/]: Skipping minecraft:custom_stat registry
+[19Oct2024 12:00:47.946] [Render thread/INFO] [KubeJS/]: Skipping minecraft:chunk_status registry
+[19Oct2024 12:00:47.950] [Render thread/INFO] [KubeJS/]: Skipping minecraft:rule_test registry
+[19Oct2024 12:00:47.952] [Render thread/INFO] [KubeJS/]: Skipping minecraft:rule_block_entity_modifier registry
+[19Oct2024 12:00:47.954] [Render thread/INFO] [KubeJS/]: Skipping minecraft:pos_rule_test registry
+[19Oct2024 12:00:47.972] [Render thread/INFO] [KubeJS/]: Skipping minecraft:menu registry
+[19Oct2024 12:00:47.974] [Render thread/INFO] [KubeJS/]: Skipping minecraft:recipe_type registry
+[19Oct2024 12:00:47.975] [Render thread/INFO] [KubeJS/]: Skipping minecraft:recipe_serializer registry
+[19Oct2024 12:00:47.996] [Render thread/INFO] [KubeJS/]: Skipping minecraft:position_source_type registry
+[19Oct2024 12:00:47.999] [Render thread/INFO] [KubeJS/]: Skipping minecraft:command_argument_type registry
+[19Oct2024 12:00:48.011] [Render thread/INFO] [KubeJS/]: Skipping minecraft:villager_type registry
+[19Oct2024 12:00:48.011] [Render thread/INFO] [KubeJS/]: Skipping minecraft:villager_profession registry
+[19Oct2024 12:00:48.012] [Render thread/INFO] [KubeJS/]: Skipping minecraft:point_of_interest_type registry
+[19Oct2024 12:00:48.013] [Render thread/INFO] [KubeJS/]: Skipping minecraft:schedule registry
+[19Oct2024 12:00:48.013] [Render thread/INFO] [KubeJS/]: Skipping minecraft:activity registry
+[19Oct2024 12:00:48.014] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_pool_entry_type registry
+[19Oct2024 12:00:48.014] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_function_type registry
+[19Oct2024 12:00:48.015] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_condition_type registry
+[19Oct2024 12:00:48.021] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_number_provider_type registry
+[19Oct2024 12:00:48.022] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_nbt_provider_type registry
+[19Oct2024 12:00:48.024] [Render thread/INFO] [KubeJS/]: Skipping minecraft:loot_score_provider_type registry
+[19Oct2024 12:00:48.024] [Render thread/INFO] [KubeJS/]: Skipping minecraft:float_provider_type registry
+[19Oct2024 12:00:48.025] [Render thread/INFO] [KubeJS/]: Skipping minecraft:int_provider_type registry
+[19Oct2024 12:00:48.026] [Render thread/INFO] [KubeJS/]: Skipping minecraft:height_provider_type registry
+[19Oct2024 12:00:48.027] [Render thread/INFO] [KubeJS/]: Skipping minecraft:block_predicate_type registry
+[19Oct2024 12:00:48.028] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/carver registry
+[19Oct2024 12:00:48.029] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/feature registry
+[19Oct2024 12:00:48.030] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_processor registry
+[19Oct2024 12:00:48.031] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_placement registry
+[19Oct2024 12:00:48.032] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_piece registry
+[19Oct2024 12:00:48.034] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_type registry
+[19Oct2024 12:00:48.035] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/placement_modifier_type registry
+[19Oct2024 12:00:48.036] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/block_state_provider_type registry
+[19Oct2024 12:00:48.037] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/foliage_placer_type registry
+[19Oct2024 12:00:48.039] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/trunk_placer_type registry
+[19Oct2024 12:00:48.041] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/root_placer_type registry
+[19Oct2024 12:00:48.042] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/tree_decorator_type registry
+[19Oct2024 12:00:48.043] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/feature_size_type registry
+[19Oct2024 12:00:48.044] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/biome_source registry
+[19Oct2024 12:00:48.044] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/chunk_generator registry
+[19Oct2024 12:00:48.045] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/material_condition registry
+[19Oct2024 12:00:48.046] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/material_rule registry
+[19Oct2024 12:00:48.047] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/density_function_type registry
+[19Oct2024 12:00:48.048] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/structure_pool_element registry
+[19Oct2024 12:00:48.049] [Render thread/INFO] [KubeJS/]: Skipping minecraft:cat_variant registry
+[19Oct2024 12:00:48.049] [Render thread/INFO] [KubeJS/]: Skipping minecraft:frog_variant registry
+[19Oct2024 12:00:48.051] [Render thread/INFO] [KubeJS/]: Skipping minecraft:banner_pattern registry
+[19Oct2024 12:00:48.051] [Render thread/INFO] [KubeJS/]: Skipping minecraft:instrument registry
+[19Oct2024 12:00:48.052] [Render thread/INFO] [KubeJS/]: Skipping minecraft:decorated_pot_patterns registry
+[19Oct2024 12:00:48.054] [Render thread/INFO] [KubeJS/]: Skipping minecraft:creative_mode_tab registry
+[19Oct2024 12:00:48.059] [Render thread/INFO] [KubeJS/]: Skipping forge:biome_modifier_serializers registry
+[19Oct2024 12:00:48.070] [Render thread/INFO] [KubeJS/]: Skipping forge:display_contexts registry
+[19Oct2024 12:00:48.072] [Render thread/INFO] [KubeJS/]: Skipping forge:entity_data_serializers registry
+[19Oct2024 12:00:48.073] [Render thread/INFO] [KubeJS/]: Skipping forge:fluid_type registry
+[19Oct2024 12:00:48.086] [Render thread/INFO] [KubeJS/]: Skipping forge:global_loot_modifier_serializers registry
+[19Oct2024 12:00:48.086] [Render thread/INFO] [KubeJS/]: Skipping forge:holder_set_type registry
+[19Oct2024 12:00:48.096] [Render thread/INFO] [KubeJS/]: Skipping forge:structure_modifier_serializers registry
+[19Oct2024 12:00:48.098] [Render thread/INFO] [KubeJS/]: Skipping justlevelingfork:aptitudes registry
+[19Oct2024 12:00:48.101] [Render thread/INFO] [KubeJS/]: Skipping justlevelingfork:passives registry
+[19Oct2024 12:00:48.103] [Render thread/INFO] [KubeJS/]: Skipping justlevelingfork:skills registry
+[19Oct2024 12:00:48.106] [Render thread/INFO] [KubeJS/]: Skipping justlevelingfork:titles registry
+[19Oct2024 12:00:48.108] [Render thread/INFO] [KubeJS/]: Skipping minecraft:worldgen/biome registry
+[19Oct2024 12:00:48.878] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: [justlevelingfork]
+[19Oct2024 12:00:49.331] [Render thread/INFO] [KubeJS/]: # Walking namespace 'kubejs'
+[19Oct2024 12:00:49.335] [Render thread/INFO] [KubeJS/]: - File found: 'kubejs:textures/block/example_block.png' (247 bytes)
+[19Oct2024 12:00:49.335] [Render thread/INFO] [KubeJS/]: - File found: 'kubejs:textures/item/example_item.png' (372 bytes)
+[19Oct2024 12:00:49.336] [Render thread/INFO] [KubeJS/]: Generated CLIENT_RESOURCES data (3 files)
+[19Oct2024 12:00:49.339] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, KubeJS Resource Pack [assets]
+[19Oct2024 12:00:49.797] [Worker-Main-3/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
+[19Oct2024 12:00:49.906] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [framework] Starting version check at https://mrcrayfish.com/modupdatejson?id=framework
+[19Oct2024 12:00:50.045] [Render thread/INFO] [KubeJS Client/]: Client resource reload complete!
+[19Oct2024 12:00:51.125] [Worker-Main-3/INFO] [KubeJS/]: CLIENT SETUP
+[19Oct2024 12:00:51.387] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [framework] Found status: BETA_OUTDATED Current: 0.7.6 Target: 0.7.11
+[19Oct2024 12:00:51.388] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[19Oct2024 12:00:51.797] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.3.0 Target: null
+[19Oct2024 12:00:53.666] [Worker-Main-1/INFO] [KubeJS Startup/]: Capturing errors for startup scripts disabled
+[19Oct2024 12:00:56.507] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[19Oct2024 12:00:56.507] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[19Oct2024 12:00:56.576] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Headphones (WH-CH700N Stereo)
+[19Oct2024 12:00:56.577] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[19Oct2024 12:00:56.800] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[19Oct2024 12:00:56.832] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[19Oct2024 12:00:56.833] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[19Oct2024 12:00:56.835] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[19Oct2024 12:00:56.836] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[19Oct2024 12:00:56.846] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[19Oct2024 12:00:56.847] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[19Oct2024 12:00:56.847] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[19Oct2024 12:00:56.848] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[19Oct2024 12:00:57.057] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[19Oct2024 12:00:57.147] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[19Oct2024 12:00:57.150] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[19Oct2024 12:00:57.150] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[19Oct2024 12:00:57.504] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[19Oct2024 12:01:00.435] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[19Oct2024 12:01:01.512] [Render thread/INFO] [KubeJS/]: Generated SERVER_DATA data (1 files)
+[19Oct2024 12:01:01.528] [Render thread/INFO] [KubeJS Server/]: Capturing errors for server scripts enabled
+[19Oct2024 12:01:01.555] [Render thread/INFO] [KubeJS Server/]: example.js#5: Hello, World! (Loaded server scripts)
+[19Oct2024 12:01:01.556] [Render thread/INFO] [KubeJS Server/]: Loaded script server_scripts:example.js in 0.001 s
+[19Oct2024 12:01:01.556] [Render thread/INFO] [KubeJS Server/]: Loaded 1/1 KubeJS server scripts in 0.023 s with 0 errors and 0 warnings
+[19Oct2024 12:01:01.556] [Render thread/INFO] [KubeJS Server/]: Scripts loaded
+[19Oct2024 12:01:04.162] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[19Oct2024 12:01:04.298] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
+[19Oct2024 12:01:04.312] [Render thread/INFO] [top.theillusivec4.curios.Curios/]: Loaded 10 curio slots
+[19Oct2024 12:01:04.321] [Render thread/INFO] [top.theillusivec4.curios.Curios/]: Loaded 1 curio entities
+[19Oct2024 12:01:05.204] [Render thread/INFO] [EMI/]: [EMI] Recipes synchronized, waiting for tags to reload EMI...
+[19Oct2024 12:01:05.207] [Render thread/INFO] [EMI/]: [EMI] Disconnecting from server, EMI data cleared
+[19Oct2024 12:01:05.209] [Thread-6/INFO] [EMI/]: [EMI] Clearing data
+[19Oct2024 12:01:05.364] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
+[19Oct2024 12:01:05.365] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[19Oct2024 12:01:05.514] [Server thread/INFO] [Framework/]: Loading server configs...
+[19Oct2024 12:01:05.870] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[19Oct2024 12:01:05.876] [Server thread/INFO] [KubeJS Server/]: Capturing errors for server scripts disabled
+[19Oct2024 12:01:05.876] [Server thread/INFO] [KubeJS Server/]: Server resource reload complete!
+[19Oct2024 12:01:08.983] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[19Oct2024 12:01:08.983] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[19Oct2024 12:01:08.983] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[19Oct2024 12:01:08.983] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[19Oct2024 12:01:08.983] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[19Oct2024 12:01:08.983] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[19Oct2024 12:01:08.984] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[19Oct2024 12:01:09.402] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[19Oct2024 12:01:09.894] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 13%
+[19Oct2024 12:01:10.395] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 61%
+[19Oct2024 12:01:10.905] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 98%
+[19Oct2024 12:01:10.905] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 5021 ms
+[19Oct2024 12:01:10.909] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[19Oct2024 12:01:11.160] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[19Oct2024 12:01:11.166] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[19Oct2024 12:01:11.301] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[19Oct2024 12:01:11.993] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
+[19Oct2024 12:01:12.063] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:abf6026c] logged in with entity id 14 at (2.9322088206484125, -59.0, 8.630556218884324)
+[19Oct2024 12:01:12.185] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[19Oct2024 12:01:12.615] [Render thread/INFO] [EMI/]: [EMI] Tags synchronized, reloading EMI
+[19Oct2024 12:01:12.616] [Render thread/INFO] [EMI/]: [EMI] Starting Reload
+[19Oct2024 12:01:12.617] [Thread-14/INFO] [EMI/]: [EMI] Starting EMI reload...
+[19Oct2024 12:01:12.617] [Thread-14/INFO] [EMI/]: [EMI] Clearing data
+[19Oct2024 12:01:12.634] [Render thread/INFO] [EMI/]: [EMI] Recipes synchronized, waiting for tags to reload EMI...
+[19Oct2024 12:01:12.642] [Thread-14/INFO] [EMI/]: [EMI] Initializing plugin from emi
+[19Oct2024 12:01:12.651] [Thread-14/INFO] [EMI/]: [EMI] Initialized plugin from emi in 7ms
+[19Oct2024 12:01:12.651] [Thread-14/INFO] [EMI/]: [EMI] Initializing plugin from justlevelingfork
+[19Oct2024 12:01:12.651] [Thread-14/INFO] [EMI/]: [EMI] Initialized plugin from justlevelingfork in 0ms
+[19Oct2024 12:01:12.652] [Thread-14/INFO] [EMI/]: [EMI] Processing tags
+[19Oct2024 12:01:12.663] [Thread-14/ERROR] [EMI/]: [EMI] Untranslated tag #forge:elytra
+[19Oct2024 12:01:12.663] [Thread-14/INFO] [EMI/]: [EMI]  Tag warning can be disabled in the config, EMI docs describe how to add a translation or exclude tags.
+[19Oct2024 12:01:12.682] [Thread-14/INFO] [EMI/]: [EMI] Constructing index
+[19Oct2024 12:01:12.692] [Thread-14/INFO] [EMI/]: [EMI] Reloading item groups on client thread...
+[19Oct2024 12:01:12.849] [Render thread/INFO] [YetAnotherConfigLib/]: Serializing class com.seniors.justlevelingfork.handler.HandlerCommonConfig to 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\JLFork\justleveling-fork.common.json5'
+[19Oct2024 12:01:12.857] [Render thread/INFO] [YetAnotherConfigLib/]: Serializing class com.seniors.justlevelingfork.handler.HandlerCommonConfig to 'C:\Users\Avaela\Documents\JustLeveling-Fork\run\config\JLFork\justleveling-fork.common.json5'
+[19Oct2024 12:01:13.092] [Thread-14/INFO] [EMI/]: [EMI] Reloading item groups on client thread took 399ms
+[19Oct2024 12:01:13.108] [Thread-14/INFO] [EMI/]: [EMI] Loading plugin from emi
+[19Oct2024 12:01:13.414] [Thread-14/INFO] [EMI/]: [EMI] Reloaded plugin from emi in 306ms
+[19Oct2024 12:01:13.415] [Thread-14/INFO] [EMI/]: [EMI] Loading plugin from justlevelingfork
+[19Oct2024 12:01:13.469] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 2 advancements
+[19Oct2024 12:01:13.473] [Thread-14/INFO] [EMI/]: [EMI] Reloaded plugin from justlevelingfork in 58ms
+[19Oct2024 12:01:13.473] [Thread-14/INFO] [EMI/]: [EMI] Baking index
+[19Oct2024 12:01:13.526] [Thread-14/INFO] [EMI/]: [EMI] Registering late recipes
+[19Oct2024 12:01:13.527] [Thread-14/INFO] [EMI/]: [EMI] Baking recipes
+[19Oct2024 12:01:13.686] [Thread-14/INFO] [EMI/]: [EMI] Baked 3082 recipes in 157ms
+[19Oct2024 12:01:13.696] [Thread-14/INFO] [EMI/]: [EMI] Baking search
+[19Oct2024 12:01:13.859] [Thread-14/INFO] [EMI/]: [EMI] Finishing up
+[19Oct2024 12:01:13.969] [Thread-14/INFO] [EMI/]: [EMI] Reloaded EMI in 1352ms
+[19Oct2024 12:01:14.136] [Thread-15/INFO] [EMI/]: [EMI] Baked recipes after reload in 200ms
+[19Oct2024 12:01:17.053] [Server thread/INFO] [EMI/]: [EMI] Starting Reload
+[19Oct2024 12:01:17.054] [Thread-18/INFO] [EMI/]: [EMI] Starting EMI reload...
+[19Oct2024 12:01:17.054] [Thread-18/INFO] [EMI/]: [EMI] Clearing data
+[19Oct2024 12:01:17.056] [Thread-18/INFO] [EMI/]: [EMI] Initializing plugin from emi
+[19Oct2024 12:01:17.057] [Thread-18/INFO] [EMI/]: [EMI] Initialized plugin from emi in 0ms
+[19Oct2024 12:01:17.057] [Thread-18/INFO] [EMI/]: [EMI] Initializing plugin from justlevelingfork
+[19Oct2024 12:01:17.057] [Thread-18/INFO] [EMI/]: [EMI] Initialized plugin from justlevelingfork in 0ms
+[19Oct2024 12:01:17.057] [Thread-18/INFO] [EMI/]: [EMI] Processing tags
+[19Oct2024 12:01:17.059] [Thread-18/ERROR] [EMI/]: [EMI] Untranslated tag #forge:elytra
+[19Oct2024 12:01:17.059] [Thread-18/INFO] [EMI/]: [EMI]  Tag warning can be disabled in the config, EMI docs describe how to add a translation or exclude tags.
+[19Oct2024 12:01:17.066] [Thread-18/INFO] [EMI/]: [EMI] Constructing index
+[19Oct2024 12:01:17.068] [Thread-18/INFO] [EMI/]: [EMI] Reloading item groups on client thread...
+[19Oct2024 12:01:17.332] [Thread-18/INFO] [EMI/]: [EMI] Reloading item groups on client thread took 264ms
+[19Oct2024 12:01:17.341] [Thread-18/INFO] [EMI/]: [EMI] Loading plugin from emi
+[19Oct2024 12:01:17.566] [Thread-18/INFO] [EMI/]: [EMI] Reloaded plugin from emi in 225ms
+[19Oct2024 12:01:17.566] [Thread-18/INFO] [EMI/]: [EMI] Loading plugin from justlevelingfork
+[19Oct2024 12:01:17.679] [Thread-18/INFO] [EMI/]: [EMI] Reloaded plugin from justlevelingfork in 113ms
+[19Oct2024 12:01:17.679] [Thread-18/INFO] [EMI/]: [EMI] Baking index
+[19Oct2024 12:01:17.744] [Thread-18/INFO] [EMI/]: [EMI] Registering late recipes
+[19Oct2024 12:01:17.744] [Thread-18/INFO] [EMI/]: [EMI] Baking recipes
+[19Oct2024 12:01:17.897] [Thread-18/INFO] [EMI/]: [EMI] Baked 3082 recipes in 153ms
+[19Oct2024 12:01:17.900] [Thread-18/INFO] [EMI/]: [EMI] Baking search
+[19Oct2024 12:01:18.046] [Thread-18/INFO] [EMI/]: [EMI] Finishing up
+[19Oct2024 12:01:18.047] [Thread-18/INFO] [EMI/]: [EMI] Reloaded EMI in 993ms
+[19Oct2024 12:01:18.236] [Thread-19/INFO] [EMI/]: [EMI] Baked recipes after reload in 116ms
+[19Oct2024 12:01:29.923] [Render thread/INFO] [EMI/]: [EMI] Starting Reload
+[19Oct2024 12:01:29.924] [Thread-22/INFO] [EMI/]: [EMI] Starting EMI reload...
+[19Oct2024 12:01:29.924] [Thread-22/INFO] [EMI/]: [EMI] Clearing data
+[19Oct2024 12:01:29.925] [Thread-22/INFO] [EMI/]: [EMI] Initializing plugin from emi
+[19Oct2024 12:01:29.926] [Thread-22/INFO] [EMI/]: [EMI] Initialized plugin from emi in 1ms
+[19Oct2024 12:01:29.926] [Thread-22/INFO] [EMI/]: [EMI] Initializing plugin from justlevelingfork
+[19Oct2024 12:01:29.926] [Thread-22/INFO] [EMI/]: [EMI] Initialized plugin from justlevelingfork in 0ms
+[19Oct2024 12:01:29.926] [Thread-22/INFO] [EMI/]: [EMI] Processing tags
+[19Oct2024 12:01:29.927] [Thread-22/ERROR] [EMI/]: [EMI] Untranslated tag #forge:elytra
+[19Oct2024 12:01:29.927] [Thread-22/INFO] [EMI/]: [EMI]  Tag warning can be disabled in the config, EMI docs describe how to add a translation or exclude tags.
+[19Oct2024 12:01:29.932] [Thread-22/INFO] [EMI/]: [EMI] Constructing index
+[19Oct2024 12:01:29.934] [Thread-22/INFO] [EMI/]: [EMI] Reloading item groups on client thread...
+[19Oct2024 12:01:30.093] [Thread-22/INFO] [EMI/]: [EMI] Reloading item groups on client thread took 158ms
+[19Oct2024 12:01:30.101] [Thread-22/INFO] [EMI/]: [EMI] Loading plugin from emi
+[19Oct2024 12:01:30.194] [Thread-22/INFO] [EMI/]: [EMI] Reloaded plugin from emi in 93ms
+[19Oct2024 12:01:30.195] [Thread-22/INFO] [EMI/]: [EMI] Loading plugin from justlevelingfork
+[19Oct2024 12:01:30.248] [Thread-22/INFO] [EMI/]: [EMI] Reloaded plugin from justlevelingfork in 53ms
+[19Oct2024 12:01:30.248] [Thread-22/INFO] [EMI/]: [EMI] Baking index
+[19Oct2024 12:01:30.268] [Thread-22/INFO] [EMI/]: [EMI] Registering late recipes
+[19Oct2024 12:01:30.268] [Thread-22/INFO] [EMI/]: [EMI] Baking recipes
+[19Oct2024 12:01:30.329] [Thread-22/INFO] [EMI/]: [EMI] Baked 3082 recipes in 61ms
+[19Oct2024 12:01:30.332] [Thread-22/INFO] [EMI/]: [EMI] Baking search
+[19Oct2024 12:01:30.384] [Thread-23/INFO] [EMI/]: [EMI] Baked recipes after reload in 52ms
+[19Oct2024 12:01:30.414] [Thread-22/INFO] [EMI/]: [EMI] Finishing up
+[19Oct2024 12:01:30.414] [Thread-22/INFO] [EMI/]: [EMI] Reloaded EMI in 490ms
+[19Oct2024 12:01:38.712] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[19Oct2024 12:01:38.726] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[19Oct2024 12:01:38.741] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[19Oct2024 12:01:38.743] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[19Oct2024 12:01:44.287] [Render thread/INFO] [EMI/]: [EMI] Starting Reload
+[19Oct2024 12:01:44.289] [Thread-26/INFO] [EMI/]: [EMI] Starting EMI reload...
+[19Oct2024 12:01:44.289] [Thread-26/INFO] [EMI/]: [EMI] Clearing data
+[19Oct2024 12:01:44.291] [Thread-26/INFO] [EMI/]: [EMI] Initializing plugin from emi
+[19Oct2024 12:01:44.291] [Thread-26/INFO] [EMI/]: [EMI] Initialized plugin from emi in 0ms
+[19Oct2024 12:01:44.292] [Thread-26/INFO] [EMI/]: [EMI] Initializing plugin from justlevelingfork
+[19Oct2024 12:01:44.292] [Thread-26/INFO] [EMI/]: [EMI] Initialized plugin from justlevelingfork in 0ms
+[19Oct2024 12:01:44.292] [Thread-26/INFO] [EMI/]: [EMI] Processing tags
+[19Oct2024 12:01:44.293] [Thread-26/ERROR] [EMI/]: [EMI] Untranslated tag #forge:elytra
+[19Oct2024 12:01:44.293] [Thread-26/INFO] [EMI/]: [EMI]  Tag warning can be disabled in the config, EMI docs describe how to add a translation or exclude tags.
+[19Oct2024 12:01:44.297] [Thread-26/INFO] [EMI/]: [EMI] Constructing index
+[19Oct2024 12:01:44.298] [Thread-26/INFO] [EMI/]: [EMI] Reloading item groups on client thread...
+[19Oct2024 12:01:44.432] [Thread-26/INFO] [EMI/]: [EMI] Reloading item groups on client thread took 134ms
+[19Oct2024 12:01:44.437] [Thread-26/INFO] [EMI/]: [EMI] Loading plugin from emi
+[19Oct2024 12:01:44.529] [Thread-26/INFO] [EMI/]: [EMI] Reloaded plugin from emi in 92ms
+[19Oct2024 12:01:44.529] [Thread-26/INFO] [EMI/]: [EMI] Loading plugin from justlevelingfork
+[19Oct2024 12:01:44.543] [Thread-26/INFO] [EMI/]: [EMI] Reloaded plugin from justlevelingfork in 14ms
+[19Oct2024 12:01:44.544] [Thread-26/INFO] [EMI/]: [EMI] Baking index
+[19Oct2024 12:01:44.554] [Thread-26/INFO] [EMI/]: [EMI] Registering late recipes
+[19Oct2024 12:01:44.554] [Thread-26/INFO] [EMI/]: [EMI] Baking recipes
+[19Oct2024 12:01:44.604] [Thread-26/INFO] [EMI/]: [EMI] Baked 3082 recipes in 50ms
+[19Oct2024 12:01:44.609] [Thread-26/INFO] [EMI/]: [EMI] Baking search
+[19Oct2024 12:01:44.657] [Thread-27/INFO] [EMI/]: [EMI] Baked recipes after reload in 49ms
+[19Oct2024 12:01:44.685] [Thread-26/INFO] [EMI/]: [EMI] Finishing up
+[19Oct2024 12:01:44.686] [Thread-26/INFO] [EMI/]: [EMI] Reloaded EMI in 397ms
+[19Oct2024 12:01:45.862] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[19Oct2024 12:01:45.877] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[19Oct2024 12:01:45.885] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[19Oct2024 12:01:45.887] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[19Oct2024 12:01:46.609] [Render thread/INFO] [EMI/]: [EMI] Disconnecting from server, EMI data cleared
+[19Oct2024 12:01:46.610] [Thread-30/INFO] [EMI/]: [EMI] Clearing data
+[19Oct2024 12:01:46.673] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[19Oct2024 12:01:46.673] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[19Oct2024 12:01:46.693] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
+[19Oct2024 12:01:46.714] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[19Oct2024 12:01:46.715] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[19Oct2024 12:01:46.715] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[19Oct2024 12:01:47.706] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[19Oct2024 12:01:47.781] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[19Oct2024 12:01:47.782] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[19Oct2024 12:01:47.809] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (2)): All chunks are saved
+[19Oct2024 12:01:47.809] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19Oct2024 12:01:47.809] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19Oct2024 12:01:47.809] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[19Oct2024 12:01:48.622] [Server thread/INFO] [Framework/]: Unloading server configs...
+[19Oct2024 12:01:49.317] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[19Oct2024 12:01:49.318] [Render thread/INFO] [EMI/]: [EMI] Disconnecting from server, EMI data cleared
+[19Oct2024 12:01:49.319] [Thread-33/INFO] [EMI/]: [EMI] Clearing data

@@ -53,42 +53,31 @@ public class EmiIntegration implements EmiPlugin {
         Iterator<EmiStack> stackiterator = stacklist.iterator();
         while(stackiterator.hasNext()){
             EmiStack currentstack = stackiterator.next();
+            boolean removed = oldstack.contains(currentstack);
 
             if(!provider.canUseItemClient(currentstack.getItemStack())){
                 emiRegistry.removeEmiStacks(currentstack);
-
-            }else{
+                removed = true;
+            }else {
                 //handle enchantment stuff here
                 CompoundTag temp = currentstack.getItemStack().serializeNBT();
-                if(temp.contains("tag")){
+                if (temp.contains("tag")) {
                     CompoundTag tag = temp.getCompound("tag");
-                    if(tag.contains("StoredEnchantments")){
-                        String enchantmentstring = tag.get("StoredEnchantments").toString().replace("\"","#").replace("]","").replace("[","");
-                        if(!provider.canUseEnchantClient(enchantmentstring)){
+                    if (tag.contains("StoredEnchantments")) {
+                        String enchantmentstring = tag.get("StoredEnchantments").toString().replace("\"", "#").replace("]", "").replace("[", "");
+                        if (!provider.canUseEnchantClient(enchantmentstring)) {
                             emiRegistry.removeEmiStacks(currentstack);
-                        }else{
-                            if(init){
-                                oldstack.add(currentstack);
-                            }else{
-                                newstack.add(currentstack);
-                                oldstack.add(currentstack);
-                            }
-                        }
-                    }else{
-                        if(init){
-                            oldstack.add(currentstack);
-                        }else{
-                            newstack.add(currentstack);
-                            oldstack.add(currentstack);
+                            removed = true;
                         }
                     }
-                }else{
-                    if(init){
-                        oldstack.add(currentstack);
-                    }else{
-                        newstack.add(currentstack);
-                        oldstack.add(currentstack);
-                    }
+                }
+            }
+            if(!removed){
+                if (init) {
+                    oldstack.add(currentstack);
+                } else {
+                    newstack.add(currentstack);
+                    oldstack.add(currentstack);
                 }
             }
         }
