@@ -1,6 +1,7 @@
 package com.seniors.justlevelingfork;
 
 import com.mojang.logging.LogUtils;
+import com.seniors.justlevelingfork.block.ModBlocks;
 import com.seniors.justlevelingfork.config.Configuration;
 import com.seniors.justlevelingfork.config.models.EAptitude;
 import com.seniors.justlevelingfork.config.models.LockItem;
@@ -9,6 +10,7 @@ import com.seniors.justlevelingfork.handler.HandlerConfigCommon;
 import com.seniors.justlevelingfork.handler.HandlerCurios;
 import com.seniors.justlevelingfork.handler.HandlerLockItemsConfig;
 import com.seniors.justlevelingfork.integration.*;
+import com.seniors.justlevelingfork.item.ModItems;
 import com.seniors.justlevelingfork.network.ServerNetworking;
 import com.seniors.justlevelingfork.registry.*;
 import com.seniors.justlevelingfork.registry.aptitude.Aptitude;
@@ -58,6 +60,9 @@ public class JustLevelingFork {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         eventBus.addListener(this::attributeSetup);
 
+        ModBlocks.register(eventBus);
+        ModItems.register(eventBus);
+
         Configuration.Init();
 
         RegistryItems.load(eventBus);
@@ -68,6 +73,7 @@ public class JustLevelingFork {
         RegistrySounds.load(eventBus);
         RegistryArguments.load(eventBus);
         RegistryTitles.load(eventBus);
+
 
         MinecraftForge.EVENT_BUS.register(new RegistryCommonEvents());
         if (HandlerCurios.isModLoaded())

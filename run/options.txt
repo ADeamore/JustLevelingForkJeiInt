@@ -121,9 +121,8 @@ key_key.hotbar.9:key.keyboard.9
 key_key.curios.open.desc:key.keyboard.g
 key_keybinds.bettercombat.feint:key.keyboard.unknown
 key_keybinds.bettercombat.toggle_mine_with_weapons:key.keyboard.unknown
-key_key.justlevelingfork.open_aptitudes:key.keyboard.y
-soundCategory_master:0.0
-soundCategory_music:1.0
+soundCategory_master:0.48427152317880795
+soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

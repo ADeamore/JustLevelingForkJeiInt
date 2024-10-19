@@ -30,7 +30,7 @@ public class HandlerCommonConfig {
 
     @SerialEntry(comment = "Should the mod automatically check for updates on load?")
     @Boolean(formatter = Boolean.Formatter.ON_OFF)
-    public boolean checkForUpdates = true;
+    public boolean checkForUpdates = false;
 
     // General options
     @SerialEntry(comment = "Aptitudes Max Level")

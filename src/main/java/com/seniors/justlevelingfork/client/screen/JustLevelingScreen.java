@@ -58,6 +58,7 @@ public class JustLevelingScreen extends Screen {
     public boolean scrollingDropDown = false;
     public String searchValue = "";
     private EditBox searchTitle;
+    private boolean leveled = false;
 
     public JustLevelingScreen() {
         super(Component.translatable("screen.aptitude.title"));
@@ -463,7 +464,7 @@ public class JustLevelingScreen extends Screen {
                         }
 
                         if(Minecraft.getInstance().level.isClientSide && EmiIntegration.isModLoaded()){
-                            EmiIntegration.updatelist();
+                            this.leveled = true;
                         }
 
                         this.checkMouse = false;
@@ -671,6 +672,10 @@ public class JustLevelingScreen extends Screen {
 
 
     public void onClose() {
+        if(this.leveled){
+            EmiIntegration.updatelist();
+        }
+        this.leveled = false;
         this.checkMouse = false;
         this.skillActualPage = 0;
         this.selectedPage = 0;

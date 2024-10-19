@@ -24,6 +24,7 @@ public class DrawTabs {
     public static boolean checkMouse = false;
 
     public static void render(GuiGraphics matrixStack, int mouseX, int mouseY, int textureWidth, int textureHeight, int recipe) {
+        /*
         Screen screen = client.screen;
         if (client.player != null) {
             isMouseCheck = false;
@@ -37,6 +38,7 @@ public class DrawTabs {
             int y = (client.getWindow().getGuiScaledHeight() - textureHeight) / 2 - 28;
             renderWidget(matrixStack, type, x, y, mouseX, mouseY);
         }
+         */
     }
 
     public static void renderWidget(GuiGraphics matrixStack, Tabs type, int x, int y, int mouseX, int mouseY) {

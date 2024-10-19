@@ -14,7 +14,7 @@
 	// If true, when trying to craft a non unlocked item, it will close the crafting the menu
 	closeCraftingMenu: true,
 	// If true, locked items will be automatically dropped from player hands
-	dropLockedItems: false,
+	dropLockedItems: true,
 	// TAC:Zero have a special id system, so if you wanna get the id to restrict you need to enable this and shoot.
 	logTaczGunNames: false,
 	// If Iron's Spells 'n Spellbooks is present, it will log the spells id's on cast required to restrict them.

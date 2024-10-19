@@ -35,6 +35,7 @@ public class Configuration {
         // Move old configuration files to the new folder.
         File oldCommonConfig = FMLPaths.CONFIGDIR.get().resolve("justleveling-fork.common.json5").toFile();
         File oldLockItems = FMLPaths.CONFIGDIR.get().resolve("justleveling-fork.lockItems.json5").toFile();
+        File oldLockEnchants = FMLPaths.CONFIGDIR.get().resolve("justleveling-fork.lockEnchants.json5").toFile();
 
         if (oldCommonConfig.exists()) {
             oldCommonConfig.renameTo(_absoluteDirectory.resolve("justleveling-fork.common.json5").toFile());
@@ -44,6 +45,11 @@ public class Configuration {
         if (oldLockItems.exists()) {
             oldLockItems.renameTo(_absoluteDirectory.resolve("justleveling-fork.lockItems.json5").toFile());
             HandlerLockItemsConfig.HANDLER.load();
+        }
+
+        if (oldLockEnchants.exists()) {
+            oldLockEnchants.renameTo(_absoluteDirectory.resolve("justleveling-fork.lockEnchants.json5").toFile());
+            HandlerLockEnchantsConfig.HANDLER.load();
         }
 
         File originalConfigFile = FMLPaths.CONFIGDIR.get().resolve("just_leveling-common.toml").toFile();
@@ -57,6 +63,7 @@ public class Configuration {
 
         HandlerCommonConfig.HANDLER.load();
         HandlerLockItemsConfig.HANDLER.load();
+        HandlerLockEnchantsConfig.HANDLER.load();
     }
 }
 

@@ -3,6 +3,8 @@
  "key.justlevelingfork.open_aptitudes" : "Open Aptitudes",
  "item.justlevelingfork.leveling_book" : "Leveling Book",
 
+ "block.justlevelingfork.bonfire_block": "Bonfire",
+
  "yacl3.config.justlevelingfork:config.category.common": "Common configuration",
  "yacl3.config.justlevelingfork:config.category.blocked": "Blocked items",
 
@@ -84,6 +86,7 @@
  "screen.aptitude.title" : "Aptitudes",
  "screen.aptitude.level" : "Lvl: %s/ Exp: %s",
  "screen.aptitude.experience" : "%s/%s",
+ "screen.newitems.title" : "New Items",
 
  "screen.skill.level_and_rank" : "%s/%s [ %s ]",
 

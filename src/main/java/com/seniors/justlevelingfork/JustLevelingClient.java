@@ -14,6 +14,8 @@ import dev.xkmc.l2tabs.tabs.core.TabRegistry;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.client.event.InputEvent;
@@ -25,19 +27,27 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 public class JustLevelingClient {
     public static Minecraft client = Minecraft.getInstance();
-    public static KeyMapping OPEN_JUSTLEVELING_SCREEN = new KeyMapping("key.justlevelingfork.open_aptitudes", InputConstants.Type.KEYSYM, 89, "key.justlevelingfork.title");
 
+    //public static KeyMapping OPEN_JUSTLEVELING_SCREEN = new KeyMapping("key.justlevelingfork.open_aptitudes", InputConstants.Type.KEYSYM, 89, "key.justlevelingfork.title");
+
+    /*
     @EventBusSubscriber(modid = JustLevelingFork.MOD_ID, value = {Dist.CLIENT})
     public static class ClientForgeEvents {
         @SubscribeEvent
         public static void checkKeyboard(InputEvent.Key event) {
             if (JustLevelingClient.client.player != null && JustLevelingClient.client.level != null &&
-                    JustLevelingClient.OPEN_JUSTLEVELING_SCREEN.consumeClick())
-                JustLevelingClient.client.setScreen(new JustLevelingScreen());
+                    JustLevelingClient.OPEN_JUSTLEVELING_SCREEN.consumeClick()){
+                //JustLevelingClient.client.setScreen(new JustLevelingScreen());
+            }
         }
     }
+     */
+
 
     @EventBusSubscriber(modid = JustLevelingFork.MOD_ID, value = {Dist.CLIENT}, bus = EventBusSubscriber.Bus.MOD)
     public static class ClientProxy {
@@ -65,9 +75,11 @@ public class JustLevelingClient {
                 MinecraftForge.EVENT_BUS.register(new EmiIntegration());}
         }
 
+        /*
         @SubscribeEvent
         public static void registerKeys(RegisterKeyMappingsEvent event) {
             event.register(JustLevelingClient.OPEN_JUSTLEVELING_SCREEN);
         }
+         */
     }
 }

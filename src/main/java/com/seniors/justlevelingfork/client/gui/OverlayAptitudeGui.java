@@ -25,6 +25,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 public class OverlayAptitudeGui {
     private final Minecraft client = Minecraft.getInstance();
     private static List<Aptitudes> aptitudes = null;
+    private static List<Aptitudes> enchants = null;
     private static int showTicks = 0;
 
     @SubscribeEvent(priority = EventPriority.NORMAL)
@@ -47,19 +48,34 @@ public class OverlayAptitudeGui {
             float alpha = (showTicks < 40) ? (0.025F * showTicks) : 1.0F;
             RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, alpha);
             Utils.drawCenterWithShadow(matrixStack, overlayMessage, xOff, yOff, 16733525);
+            if(aptitudes == null){
+                for (int j = 0; j < enchants.size(); j++) {
+                    Aptitudes abilities = enchants.get(j);
+                    String level = Integer.toString(abilities.getAptitudeLvl());
+                    boolean met = (AptitudeCapability.get().getAptitudeLevel(abilities.getAptitude()) >= abilities.getAptitudeLvl());
 
-            for (int j = 0; j < aptitudes.size(); j++) {
-                Aptitudes abilities = aptitudes.get(j);
-                String level = Integer.toString(abilities.getAptitudeLvl());
-                boolean met = (AptitudeCapability.get().getAptitudeLevel(abilities.getAptitude()) >= abilities.getAptitudeLvl());
+                    int x = xOff + j * 24 - enchants.size() * 12;
+                    int y = yOff + 15;
 
-                int x = xOff + j * 24 - aptitudes.size() * 12;
-                int y = yOff + 15;
+                    RenderSystem.enableBlend();
+                    RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, alpha);
+                    matrixStack.blit(abilities.getAptitude().getLockedTexture(abilities.getAptitudeLvl()), x, y, 0.0F, 0.0F, 16, 16, 16, 16);
+                    Utils.drawCenterWithShadow(matrixStack, level, x + 16, y + 12, met ? 5635925 : 16733525);
+                }
+            }else{
+                for (int j = 0; j < aptitudes.size(); j++) {
+                    Aptitudes abilities = aptitudes.get(j);
+                    String level = Integer.toString(abilities.getAptitudeLvl());
+                    boolean met = (AptitudeCapability.get().getAptitudeLevel(abilities.getAptitude()) >= abilities.getAptitudeLvl());
 
-                RenderSystem.enableBlend();
-                RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, alpha);
-                matrixStack.blit(abilities.getAptitude().getLockedTexture(abilities.getAptitudeLvl()), x, y, 0.0F, 0.0F, 16, 16, 16, 16);
-                Utils.drawCenterWithShadow(matrixStack, level, x + 16, y + 12, met ? 5635925 : 16733525);
+                    int x = xOff + j * 24 - aptitudes.size() * 12;
+                    int y = yOff + 15;
+
+                    RenderSystem.enableBlend();
+                    RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, alpha);
+                    matrixStack.blit(abilities.getAptitude().getLockedTexture(abilities.getAptitudeLvl()), x, y, 0.0F, 0.0F, 16, 16, 16, 16);
+                    Utils.drawCenterWithShadow(matrixStack, level, x + 16, y + 12, met ? 5635925 : 16733525);
+                }
             }
 
             RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
@@ -74,6 +90,7 @@ public class OverlayAptitudeGui {
 
     public static void showWarning(String aptitude) {
         aptitudes = HandlerAptitude.getValue(aptitude);
+        enchants = HandlerAptitude.getEnchantValue(aptitude);
         showTicks = 90;
     }
 }

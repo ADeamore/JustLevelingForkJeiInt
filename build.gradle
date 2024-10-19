@@ -50,7 +50,7 @@ minecraft {
     // However, it must be at "META-INF/accesstransformer.cfg" in the final mod jar to be loaded by Forge.
     // This default location is a best practice to automatically put the file in the right place in the final jar.
     // See https://docs.minecraftforge.net/en/latest/advanced/accesstransformers/ for more information.
-    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
     // Default run configurations.
     // These can be tweaked, removed, or duplicated as needed.
@@ -131,10 +131,6 @@ repositories {
         name "KosmX's maven"
         url 'https://maven.kosmx.dev/'
     }
-    // BetterCombat
-    maven {
-        url 'https://api.modrinth.com/maven'
-    }
     // Curios API
     maven {
         name = "Illusive Soulworks maven"
@@ -206,15 +202,6 @@ dependencies {
     // L2
     compileOnly fg.deobf("dev.xkmc.l2library:l2library:2.4.28")
     compileOnly fg.deobf("dev.xkmc.l2tabs:l2tabs:0.3.1")
-
-    // ClothConfig implementation (Required by BetterCombat)
-    implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:11.1.118")
-
-    // PlayerAnimator implementation (Required by BetterCombat)
-    implementation fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:1.0.2-rc1+1.20")
-
-    // BetterCombat implementation
-    implementation fg.deobf('maven.modrinth:better-combat:1.8.5+1.20.1-forge')
 
     // Compile against only the API artifact
     compileOnly(fg.deobf("top.theillusivec4.curios:curios-forge:5.9.1+1.20.1:api"))

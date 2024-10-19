@@ -10,7 +10,9 @@ import com.seniors.justlevelingfork.network.packet.client.*;
 import com.seniors.justlevelingfork.network.packet.common.CounterAttackSP;
 import com.seniors.justlevelingfork.registry.skills.ConvergenceSkill;
 import com.seniors.justlevelingfork.registry.skills.TreasureHunterSkill;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
@@ -27,7 +29,9 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.AABB;
@@ -94,8 +98,10 @@ public class RegistryCommonEvents {
         TitleCommand.register(event.getDispatcher());
         AptitudesReloadCommand.register(event.getDispatcher());
         RegisterItem.register(event.getDispatcher());
+        RegisterEnchant.register(event.getDispatcher());
         GlobalLimitCommand.register(event.getDispatcher());
         UpdateAptitudeLevelCommand.register(event.getDispatcher());
+        ReloadEmiCommand.register(event.getDispatcher());
     }
 
     @SubscribeEvent
@@ -152,7 +158,7 @@ public class RegistryCommonEvents {
                         && JustLevelingFork.UpdatesAvailable.left) {
                     if (serverPlayer.hasPermissions(2)) {
                         Component component = Component.literal(String.format("[JustLevelingFork] Version %s is available, it's recommended to update!", JustLevelingFork.UpdatesAvailable.right));
-                        serverPlayer.sendSystemMessage(component);
+                        //serverPlayer.sendSystemMessage(component);
                     }
                 }
             }
@@ -182,8 +188,23 @@ public class RegistryCommonEvents {
 
         if ((!provider.canUseItem(player, location) || !provider.canUseBlock(player, block))) {
             event.setCanceled(true);
+            return;
+        }
+        if(tossitem(item,player,provider)){
+            event.setCanceled(true);
         }
     }
+
+    /*
+    @SubscribeEvent(priority =  EventPriority.HIGHEST)
+    public void onleftclickair(PlayerInteractEvent.LeftClickEmpty event){
+        Player player = event.getEntity();
+        if(player.isCreative()) return;
+        ItemStack item = event.getItemStack();
+        AptitudeCapability provider = AptitudeCapability.get(player);
+        tossitem(item,player,provider);
+    }
+     */
 
     @SubscribeEvent(priority = EventPriority.HIGHEST)
     public void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
@@ -207,6 +228,10 @@ public class RegistryCommonEvents {
         }
 
         if ((!provider.canUseItem(player, location) || !provider.canUseBlock(player, block))) {
+            event.setCanceled(true);
+            return;
+        }
+        if(tossitem(item,player,provider)){
             event.setCanceled(true);
         }
     }
@@ -232,6 +257,10 @@ public class RegistryCommonEvents {
         }
 
         if (!provider.canUseItem(player, location)) {
+            event.setCanceled(true);
+            return;
+        }
+        if(tossitem(item,player,provider)){
             event.setCanceled(true);
         }
     }
@@ -259,6 +288,10 @@ public class RegistryCommonEvents {
 
         if (!provider.canUseEntity(player, entity) || !provider.canUseItem(player, location)) {
             event.setCanceled(true);
+            return;
+        }
+        if(tossitem(item,player,provider)){
+            event.setCanceled(true);
         }
     }
 
@@ -276,6 +309,9 @@ public class RegistryCommonEvents {
                 if (!provider.canUseItem(player, item)) {
                     player.drop(item.copy(), false);
                     item.setCount(0);
+                }
+                if(tossitem(item,player,provider)){
+                    event.setCanceled(true);
                 }
             }
         }
@@ -299,6 +335,7 @@ public class RegistryCommonEvents {
                         player.drop(offHand.copy(), false);
                         offHand.setCount(0);
                     }
+                    tossitem(offHand,player,provider);
                 });
             }
         }
@@ -357,11 +394,14 @@ public class RegistryCommonEvents {
                         for (String tetraItem : extractedTypes) {
                             if (!provider.canUseSpecificID(player, tetraItem)) {
                                 event.setCanceled(true);
+                                return;
                             }
                         }
                     }
-                }
-                else if (!provider.canUseItem(player, item)) {
+                }else if (!provider.canUseItem(player, item)) {
+                    event.setCanceled(true);
+                    return;
+                }else if(tossitem(item,player,provider)){
                     event.setCanceled(true);
                 }
             }
@@ -479,9 +519,11 @@ public class RegistryCommonEvents {
                                         }
                                     }
                                 }
-                            }
-                            else if (!provider.canUseItem(player, item)) {
+                            }else if (!provider.canUseItem(player, item)) {
                                 event.setCanceled(true);
+                            }else if(tossitem(item,player,provider)){
+                                event.setCanceled(true);
+                                return;
                             }
                         }
 
@@ -643,5 +685,49 @@ public class RegistryCommonEvents {
 
         MinecraftServer server = ((ServerLevel) world).getServer();
         server.submit(new TickTask(server.getTickCount() + delay, task));
+    }
+
+    public static boolean tossitem(ItemStack item, Player player, AptitudeCapability provider){
+        CompoundTag temp = item.serializeNBT();
+        if(item.getItem() == Items.AIR){
+            return false;
+        }
+        if(temp.contains("tag")){
+            CompoundTag tag = temp.getCompound("tag");
+            //enchanted books
+            if(tag.contains("StoredEnchantments")){
+                String enchantmentstring = tag.get("StoredEnchantments").toString().replace("\"","#").replace("]","").replace("[","");
+                String[] stringarray = enchantmentstring.split("},");
+                Iterator<String> stringiter = Arrays.stream(stringarray).iterator();
+                while(stringiter.hasNext()) {
+                    String currentstring = stringiter.next();
+                    char lastchar = currentstring.charAt(currentstring.length() - 1);
+                    if(!String.valueOf(lastchar).equals("}")) currentstring = currentstring + "}";
+                    if (!provider.canUseSpecificEnchantID(player, currentstring)) {
+                        player.drop(item.copy(), false);
+                        item.setCount(0);
+                        return true;
+                    }
+                }
+            }
+            //enchanted items
+            if(tag.contains("Enchantments")){
+                String enchantmentstring = tag.get("Enchantments").toString().replace("\"","#").replace("]","").replace("[","");
+                String[] stringarray = enchantmentstring.split("},");
+                Iterator<String> stringiter = Arrays.stream(stringarray).iterator();
+                while(stringiter.hasNext()) {
+                    String currentstring = stringiter.next();
+                    char lastchar = currentstring.charAt(currentstring.length() - 1);
+                    if(!String.valueOf(lastchar).equals("}")) currentstring = currentstring + "}";
+                    if (!provider.canUseSpecificEnchantID(player, currentstring)) {
+                        ItemStack dropitem = item.copy();
+                        player.drop(dropitem, false);
+                        item.setCount(0);
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
 }

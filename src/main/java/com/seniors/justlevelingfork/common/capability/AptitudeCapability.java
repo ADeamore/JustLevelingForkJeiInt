@@ -174,8 +174,17 @@ public class AptitudeCapability implements INBTSerializable<CompoundTag> {
         return canUseClient(Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(item.getItem())));
     }
 
+    // Required for locking PointBlank
+    public boolean canUseEnchantClient(String enchant) {
+        return canUseEnchantClientFunction(enchant);
+    }
+
     public boolean canUseSpecificID(Player player, String specificID){
         return canUse(player, specificID);
+    }
+
+    public boolean canUseSpecificEnchantID(Player player, String specificID){
+        return canUseEnchant(player, specificID);
     }
 
     public boolean canUseBlock(Player player, Block block) {
@@ -214,8 +223,36 @@ public class AptitudeCapability implements INBTSerializable<CompoundTag> {
         return true;
     }
 
+    // Required for locking PointBlank
+    private boolean canUseEnchantClientFunction(String string) {
+        List<Aptitudes> aptitude = HandlerAptitude.getEnchantValue(string);
+        if (aptitude != null) {
+            for (Aptitudes aptitudes : aptitude) {
+                if (getAptitudeLevel(aptitudes.getAptitude()) < aptitudes.getAptitudeLvl()) {
+                    OverlayAptitudeGui.showWarning(string);
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
     private boolean canUse(Player player, String restrictionID) {
         List<Aptitudes> aptitude = HandlerAptitude.getValue(restrictionID);
+        if (aptitude != null) {
+            for (Aptitudes aptitudes : aptitude) {
+                if (getAptitudeLevel(aptitudes.getAptitude()) < aptitudes.getAptitudeLvl()) {
+                    if (player instanceof net.minecraft.server.level.ServerPlayer)
+                        AptitudeOverlayCP.send(player, restrictionID);
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    private boolean canUseEnchant(Player player, String restrictionID) {
+        List<Aptitudes> aptitude = HandlerAptitude.getEnchantValue(restrictionID);
         if (aptitude != null) {
             for (Aptitudes aptitudes : aptitude) {
                 if (getAptitudeLevel(aptitudes.getAptitude()) < aptitudes.getAptitudeLvl()) {
